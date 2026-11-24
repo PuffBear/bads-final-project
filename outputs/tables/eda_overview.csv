@@ -1,0 +1,9 @@
+file,rows,cols,date_coverage,dtypes
+customers,6000,14,signup_date: 2024-01-01 to 2025-12-10,"customer_id:str, signup_date:datetime64[us], age:int64, gender:str, region:str, city:str, annual_income_band_inr:str, preferred_category:str, orders_before_2026:int64, spend_before_2026_inr:float64, days_since_last_order_at_2025_12_31:int64, website_visits_dec_2025:int64, email_engagement_dec_2025:int64, marketing_consent:int64"
+campaign_catalog,14,8,start_date: 2026-01-12 to 2026-08-21; end_date: 2026-01-23 to 2026-09-01,"campaign_id:str, campaign_name:str, channel:str, featured_category:str, start_date:datetime64[us], end_date:datetime64[us], discount_pct:int64, campaign_objective:str"
+campaign_exposures,21000,10,exposure_date: 2026-01-12 to 2026-09-01,"exposure_id:str, customer_id:str, campaign_id:str, exposure_date:datetime64[us], channel:str, delivered:int64, opened:int64, clicked:int64, contact_cost_inr:float64, purchased_within_14_days:int64"
+orders,14274,9,order_date: 2025-01-01 to 2026-10-07,"order_id:str, customer_id:str, order_date:datetime64[us], attributed_exposure_id:str, gross_merchandise_value_inr:float64, discount_inr:float64, shipping_fee_inr:int64, order_total_inr:float64, payment_mode:str"
+order_items,25086,6,n/a,"order_item_id:str, order_id:str, product_id:str, quantity:int64, unit_price_inr:int64, line_gross_value_inr:float64"
+product_catalog,18,4,n/a,"product_id:str, product_name:str, category:str, list_price_inr:int64"
+weekly_channel_performance,888,7,week_start_date: 2024-01-01 to 2026-10-26,"week_start_date:datetime64[us], channel:str, ad_spend_inr:float64, impressions:int64, clicks:int64, conversions:int64, attributed_revenue_inr:float64"
+brand_perception_survey,6400,8,n/a,"respondent_id:str, customer_id:str, brand:str, perceived_quality_1_to_5:int64, perceived_affordability_1_to_5:int64, perceived_innovation_1_to_5:int64, perceived_naturalness_1_to_5:int64, perceived_trendiness_1_to_5:int64"

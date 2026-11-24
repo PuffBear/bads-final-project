@@ -1,0 +1,276 @@
+
+### campaign_economics
+   campaign_id   channel featured_category  discount_pct  exposures  conv_rate  cost_per_order  avg_order_net  contribution  roi_on_contact  breakeven_incrementality
+0         C001     Email          Skincare            10     1475.0      0.048           8.713       1325.345      51658.85          83.503                     0.177
+1         C002       SMS          Haircare            15     1552.0      0.043          21.711       1407.080      48455.31          33.311                     0.272
+2         C003    Social          Skincare            12     1466.0      0.056         141.221       1184.791      41412.34           3.576                     0.375
+3         C004    Search          Haircare            10     1542.0      0.053         248.812       1403.000      42981.26           2.133                     0.433
+4         C005   Display          Bodycare            20     1518.0      0.055          72.307       1089.324      39677.84           6.533                     0.422
+5         C006  WhatsApp          Skincare            15     1452.0      0.063          21.631       1214.977      56564.92          28.737                     0.275
+6         C007     Email           Bundles            25     1499.0      0.063           6.676       1066.380      46150.99          73.540                     0.424
+7         C008       SMS          Haircare            18     1513.0      0.059          16.038       1338.627      59594.39          41.750                     0.316
+8         C009    Social           Bundles            12     1546.0      0.043         182.349       1376.827      37530.71           3.118                     0.394
+9         C010    Search          Bodycare            10     1504.0      0.049         268.610       1232.015      30772.38           1.548                     0.494
+10        C011   Display          Skincare            15     1438.0      0.063          63.204       1339.936      58801.82          10.224                     0.317
+11        C012  WhatsApp           Bundles            22     1551.0      0.063          21.906       1148.345      52141.80          24.539                     0.391
+12        C013     Email          Skincare            17     1433.0      0.070           5.991       1316.297      67594.64         112.835                     0.290
+13        C014       SMS          Haircare            20     1511.0      0.054          17.362       1206.556      48045.15          33.748                     0.353
+
+### channel_economics
+          exposures  delivered  opened  clicked  conv_rate  cost_per_exposure  cost_per_order  net_rev_per_exposure  contribution_per_exposure  roi_on_contact  breakeven_incrementality
+channel                                                                                                                                                                                 
+Email        4407.0      0.926   0.450    0.299      0.060              0.419           6.963                73.966                     37.532          89.637                     0.305
+SMS          4576.0      0.921   0.342    0.252      0.052              0.941          18.091                68.258                     34.112          36.253                     0.315
+Social       3012.0      0.986   0.361    0.219      0.049              7.840         159.562                62.425                     26.210           3.343                     0.384
+Search       3046.0      0.987   0.365    0.192      0.051             13.142         258.264                67.240                     24.213           1.842                     0.460
+Display      2956.0      0.986   0.370    0.280      0.059              4.000          67.573                72.205                     33.315           8.328                     0.363
+WhatsApp     3003.0      0.920   0.425    0.307      0.063              1.363          21.773                73.910                     36.199          26.558                     0.336
+
+### total
+exposures                      21000.000
+delivered                          0.950
+opened                             0.386
+clicked                            0.260
+conv_rate                          0.056
+conv_per_delivered                 0.059
+buyers                          1169.000
+contact_cost                   85715.600
+cost_per_exposure                  4.082
+cost_per_order                    73.324
+net_revenue                  1466544.000
+net_rev_per_exposure              69.835
+avg_order_net                   1254.529
+discount_cost                 282071.000
+contribution                  681382.400
+contribution_per_exposure         32.447
+roi_on_contact                     7.949
+revenue_per_contact_rupee         17.109
+breakeven_incrementality           0.351
+nonconsent_share                   0.188
+dtype: float64
+
+### breakeven_sensitivity
+             margin_40  margin_50  margin_60  margin_70   channel
+campaign_id                                                      
+C001             0.265      0.212      0.177      0.151     Email
+C002             0.408      0.326      0.272      0.233       SMS
+C003             0.562      0.450      0.375      0.321    Social
+C004             0.649      0.519      0.433      0.371    Search
+C005             0.633      0.506      0.422      0.362   Display
+C006             0.413      0.330      0.275      0.236  WhatsApp
+C007             0.637      0.509      0.424      0.364     Email
+C008             0.475      0.380      0.316      0.271       SMS
+C009             0.591      0.473      0.394      0.338    Social
+C010             0.741      0.592      0.494      0.423    Search
+C011             0.475      0.380      0.317      0.272   Display
+C012             0.587      0.470      0.391      0.336  WhatsApp
+C013             0.434      0.348      0.290      0.248     Email
+C014             0.529      0.423      0.353      0.302       SMS
+
+### total_sensitivity
+                           margin_40   margin_50   margin_60  margin_70
+contribution              331659.400  506520.900  681382.400   856243.9
+breakeven_incrementality       0.526       0.421       0.351        0.3
+
+### logit_drivers
+                                            odds_ratio  ci_low  ci_high  p_value
+C(gender)[T.Male]                                0.997   0.879    1.130    0.957
+C(gender)[T.Non-disclosed]                       0.901   0.622    1.305    0.582
+C(region)[T.East]                                0.837   0.641    1.092    0.189
+C(region)[T.North]                               0.926   0.733    1.170    0.518
+C(region)[T.South]                               0.910   0.716    1.158    0.445
+C(region)[T.West]                                0.892   0.701    1.136    0.356
+C(annual_income_band_inr)[T.25L+]                0.965   0.761    1.223    0.766
+C(annual_income_band_inr)[T.4L-8L]               0.915   0.762    1.100    0.346
+C(annual_income_band_inr)[T.8L-15L]              0.956   0.799    1.144    0.626
+C(annual_income_band_inr)[T.Under 4L]            1.047   0.855    1.283    0.656
+C(preferred_category)[T.Bundles]                 0.929   0.709    1.216    0.591
+C(preferred_category)[T.Haircare]                1.036   0.862    1.245    0.708
+C(preferred_category)[T.Skincare]                0.882   0.743    1.045    0.147
+C(channel, Treatment('Email'))[T.Display]        1.054   0.812    1.367    0.693
+C(channel, Treatment('Email'))[T.SMS]            1.003   0.604    1.665    0.990
+C(channel, Treatment('Email'))[T.Search]         1.472   0.886    2.445    0.135
+C(channel, Treatment('Email'))[T.Social]         1.118   0.852    1.466    0.421
+C(channel, Treatment('Email'))[T.WhatsApp]       1.073   0.884    1.303    0.476
+C(featured_category)[T.Bundles]                  1.094   0.762    1.571    0.626
+C(featured_category)[T.Haircare]                 1.015   0.728    1.415    0.930
+C(featured_category)[T.Skincare]                 1.197   0.845    1.694    0.312
+log_recency                                      0.757   0.727    0.789    0.000
+log_orders                                       1.409   1.012    1.963    0.043
+log_spend                                        0.968   0.805    1.163    0.727
+buyer_before                                     1.494   0.492    4.533    0.478
+website_visits_dec_2025                          1.014   0.994    1.034    0.179
+email_engagement_dec_2025                        1.035   1.013    1.058    0.002
+marketing_consent                                1.109   0.941    1.306    0.216
+age                                              0.997   0.991    1.004    0.402
+np.log1p(tenure_days)                            1.006   0.931    1.086    0.887
+cat_match                                        1.967   1.720    2.249    0.000
+discount_pct                                     1.047   1.019    1.075    0.001
+prior_contacts_30d                               1.011   0.922    1.110    0.810
+
+### logit_fit
+n                          21000.0000
+pseudo_r2                      0.0611
+pseudo_r2_customer_only        0.0481
+dtype: float64
+
+### conditional_logit
+                            odds_ratio  ci_low  ci_high  p_value
+channel_Display                  0.990   0.707    1.386    0.952
+channel_SMS                      0.804   0.396    1.634    0.547
+channel_Search                   1.017   0.491    2.107    0.964
+channel_Social                   1.089   0.784    1.512    0.611
+channel_WhatsApp                 0.993   0.784    1.258    0.955
+featured_category_Bodycare       1.043   0.646    1.683    0.864
+featured_category_Bundles        0.917   0.672    1.253    0.588
+featured_category_Haircare       1.117   0.565    2.207    0.751
+discount_pct                     1.037   1.000    1.074    0.049
+cat_match                        2.054   1.741    2.423    0.000
+prior_contacts_30d               1.017   0.908    1.139    0.777
+month                            1.020   0.977    1.065    0.372
+
+### conditional_logit_n
+customers     982
+exposures    4354
+dtype: int64
+
+### mix_adjusted
+                    campaign_name   channel featured_category  discount_pct  conv_rate  adjusted_conv_rate  expected_from_audience  rank_raw  rank_adjusted
+campaign_id                                                                                                                                                
+C001               New Year Reset     Email          Skincare            10     0.0481              0.0482                  0.0562        12             12
+C002           Winter Skin Rescue       SMS          Haircare            15     0.0432              0.0428                  0.0560        13             13
+C003                    Glow Week    Social          Skincare            12     0.0559              0.0579                  0.0537         7              6
+C004             Haircare Refresh    Search          Haircare            10     0.0525              0.0529                  0.0553        10             10
+C005         Valentines Self Care   Display          Bodycare            20     0.0553              0.0564                  0.0547         8              8
+C006             Summer SPF Drive  WhatsApp          Skincare            15     0.0627              0.0620                  0.0559         4              5
+C007           Weekend Flash Sale     Email           Bundles            25     0.0627              0.0623                  0.0565         3              4
+C008                 Monsoon Care       SMS          Haircare            18     0.0588              0.0576                  0.0570         6              7
+C009             VIP Early Access    Social           Bundles            12     0.0427              0.0424                  0.0561        14             14
+C010               Wellness Month    Search          Bodycare            10     0.0492              0.0503                  0.0549        11             11
+C011              Festive Preview   Display          Skincare            15     0.0633              0.0630                  0.0553         2              3
+C012               Bundle Savings  WhatsApp           Bundles            22     0.0625              0.0632                  0.0549         5              2
+C013                 Payday Picks     Email          Skincare            17     0.0698              0.0687                  0.0573         1              1
+C014           Reactivation Boost       SMS          Haircare            20     0.0543              0.0544                  0.0555         9              9
+
+### adjusted_rate_vs_discount
+slope_per_pp    0.00087
+p_value         0.05389
+r2              0.27563
+dtype: float64
+
+### model_performance
+                                            model  auc_test  auc_ci_low  auc_ci_high  avg_precision   brier  cv_auc_grouped_5fold  cv_auc_sd  mean_pred_prob  actual_rate  top30_buyer_capture
+0                             Logistic regression    0.6798      0.6500       0.7065         0.1286  0.0569                0.6845     0.0140          0.0557       0.0624               0.5405
+1                               Gradient boosting    0.6729      0.6421       0.6998         0.1274  0.0570                0.6717     0.0147          0.0544       0.0624               0.5189
+2                            Gaussian Naive Bayes    0.6725      0.6433       0.7007         0.1227  0.0874                0.6716     0.0118          0.1520       0.0624               0.5378
+3         Gaussian NB, redundant features removed    0.6735      0.6447       0.7020         0.1228  0.0670                0.6736     0.0116          0.0835       0.0624               0.5324
+4               Naive Bayes (categorical, binned)    0.6588      0.6310       0.6859         0.1141  0.0622                0.6573     0.0196          0.0853       0.0624               0.5297
+5                                  RFM score only    0.6666      0.6350       0.6936         0.1216     NaN                   NaN        NaN             NaN       0.0624               0.5351
+6  LEAKY: + delivered/opened/clicked (not usable)    0.7298         NaN          NaN         0.1600     NaN                   NaN        NaN             NaN       0.0624               0.6054
+
+### test_set
+train_exposures        15067
+test_exposures          5933
+test_buyers              370
+test_campaigns     C011-C014
+dtype: object
+
+### chosen_model
+Logistic regression
+
+### gains
+        exposures  buyers  conv_rate     cost    net_rev       gmv      disc   lift  cum_share_buyers  cum_share_cost  cum_share_exposures  contribution  cum_contribution
+decile                                                                                                                                                                    
+1             594      92      0.155   914.01  102312.97  126128.0  23815.03  2.484             0.249           0.092                  0.1      50947.76          50947.76
+2             593      67      0.113   946.77   98394.45  120894.0  22499.55  1.812             0.430           0.188                  0.2      49090.08         100037.84
+3             593      41      0.069  1022.69   43232.52   53024.0   9791.48  1.109             0.541           0.291                  0.3      21000.23         121038.07
+4             594      43      0.072   995.20   53481.15   64963.0  11481.85  1.161             0.657           0.392                  0.4      26500.75         147538.82
+5             593      33      0.056   976.76   43276.49   53136.0   9859.51  0.892             0.746           0.490                  0.5      21045.33         168584.15
+6             593      18      0.030   967.70   23608.78   29055.0   5446.22  0.487             0.795           0.588                  0.6      11019.08         179603.23
+7             594      28      0.047  1030.45   32626.63   39888.0   7261.37  0.756             0.870           0.692                  0.7      15640.98         195244.21
+8             593      18      0.030   976.88   20405.14   24911.0   4505.86  0.487             0.919           0.791                  0.8       9463.86         204708.07
+9             593      19      0.032  1000.56   28621.38   34803.0   6181.62  0.514             0.970           0.892                  0.9      13699.62         218407.69
+10            593      11      0.019  1068.13   17931.45   21719.0   3787.55  0.297             1.000           1.000                  1.0       8175.72         226583.41
+
+### targeting_sim
+   deciles_contacted  share_contacts  share_buyers  share_cost  conv_rate  attributed_contribution
+0                  1             0.1         0.249       0.092      0.155                 50947.76
+1                  2             0.2         0.430       0.188      0.134                100037.84
+2                  3             0.3         0.541       0.291      0.112                121038.07
+3                  4             0.4         0.657       0.392      0.102                147538.82
+4                  5             0.5         0.746       0.490      0.093                168584.15
+5                  6             0.6         0.795       0.588      0.083                179603.23
+6                  7             0.7         0.870       0.692      0.078                195244.21
+7                  8             0.8         0.919       0.791      0.072                204708.07
+8                  9             0.9         0.970       0.892      0.067                218407.69
+9                 10             1.0         1.000       1.000      0.062                226583.41
+
+### discount_best_in_grid
+                        estimate  margin  discount_pct  contribution_per_exposure
+1          cross-sectional logit     0.4            15                      23.21
+8          cross-sectional logit     0.5            25                      35.45
+14         cross-sectional logit     0.6            30                      52.23
+19         cross-sectional logit     0.7            30                      69.65
+20         within-customer logit     0.4            10                      22.43
+27         within-customer logit     0.5            20                      31.43
+34         within-customer logit     0.6            30                      43.67
+39         within-customer logit     0.7            30                      58.23
+40  within-customer lower 95% CI     0.4            10                      22.43
+45  within-customer lower 95% CI     0.5            10                      29.91
+50  within-customer lower 95% CI     0.6            10                      37.39
+55  within-customer lower 95% CI     0.7            10                      44.86
+
+### discount_econ_60
+estimate      cross-sectional logit  within-customer logit  within-customer lower 95% CI
+discount_pct                                                                            
+10                            37.39                  37.39                         37.39
+15                            41.79                  39.87                         33.67
+20                            45.99                  41.91                         29.95
+25                            49.63                  43.28                         26.22
+30                            52.23                  43.67                         22.49
+
+### gains_breakeven
+        conv_rate     cost  breakeven_incrementality
+decile                                              
+1           0.155   914.01                     0.327
+2           0.113   946.77                     0.323
+3           0.069  1022.69                     0.340
+4           0.072   995.20                     0.320
+5           0.056   976.76                     0.340
+6           0.030   967.70                     0.368
+7           0.047  1030.45                     0.346
+8           0.030   976.88                     0.367
+9           0.032  1000.56                     0.344
+10          0.019  1068.13                     0.373
+
+### consent
+                   exposures  conv_rate  buyers  contact_cost     net_rev  share_of_buyers
+marketing_consent                                                                         
+0                     3957.0      0.052   204.0      16186.54   279127.09            0.175
+1                    17043.0      0.057   965.0      69529.06  1187416.91            0.825
+
+### frequency_30d
+                      mean   size
+prior_contacts_30d               
+0                   0.0549  14160
+1                   0.0569   5519
+2                   0.0590   1170
+3+                  0.0596    151
+
+### segment_x_channel
+channel                      Email   SMS  Social  Search  Display  WhatsApp
+segment                                                                    
+Recent actives                11.8  10.8    10.8     9.2     11.1      15.0
+Lapsing regulars               8.9   5.2     4.9     6.0      7.4       5.8
+Low-basket buyers              3.8   4.3     4.4     4.3      5.2       6.3
+Occasional buyers              4.2   4.2     3.5     4.3      4.7       3.8
+Registered, never purchased    2.4   1.9     2.4     1.9      2.2       2.8
+
+### segment_economics
+                             exposures  conv_rate  cost_per_order  net_rev_per_exposure  contribution_per_exposure  breakeven_incrementality
+segment                                                                                                                                     
+Recent actives                  3503.0      0.114          35.018               137.421                     67.775                     0.312
+Lapsing regulars                3552.0      0.064          65.388                82.172                     38.816                     0.339
+Low-basket buyers               3560.0      0.046          86.244                62.162                     28.542                     0.358
+Occasional buyers               7532.0      0.041          98.292                51.258                     22.773                     0.378
+Registered, never purchased     2853.0      0.022         186.491                30.113                     11.551                     0.464

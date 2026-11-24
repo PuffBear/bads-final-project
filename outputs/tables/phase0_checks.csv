@@ -1,0 +1,83 @@
+area,check,value,status,note
+structure,customers: rows x cols,6000 x 14,INFO,
+structure,customers: null cells,0,PASS,
+structure,customers: duplicate rows,0,PASS,
+structure,campaign_catalog: rows x cols,14 x 8,INFO,
+structure,campaign_catalog: null cells,0,PASS,
+structure,campaign_catalog: duplicate rows,0,PASS,
+structure,campaign_exposures: rows x cols,21000 x 10,INFO,
+structure,campaign_exposures: null cells,0,PASS,
+structure,campaign_exposures: duplicate rows,0,PASS,
+structure,orders: rows x cols,14274 x 9,INFO,
+structure,orders: null cells,13105,PASS,attributed_exposure_id=13105
+structure,orders: duplicate rows,0,PASS,
+structure,order_items: rows x cols,25086 x 6,INFO,
+structure,order_items: null cells,0,PASS,
+structure,order_items: duplicate rows,0,PASS,
+structure,product_catalog: rows x cols,18 x 4,INFO,
+structure,product_catalog: null cells,0,PASS,
+structure,product_catalog: duplicate rows,0,PASS,
+structure,weekly_channel_performance: rows x cols,888 x 7,INFO,
+structure,weekly_channel_performance: null cells,0,PASS,
+structure,weekly_channel_performance: duplicate rows,0,PASS,
+structure,brand_perception_survey: rows x cols,6400 x 8,INFO,
+structure,brand_perception_survey: null cells,0,PASS,
+structure,brand_perception_survey: duplicate rows,0,PASS,
+keys,customers: primary key ['customer_id'] unique,0,PASS,
+keys,campaign_catalog: primary key ['campaign_id'] unique,0,PASS,
+keys,campaign_exposures: primary key ['exposure_id'] unique,0,PASS,
+keys,orders: primary key ['order_id'] unique,0,PASS,
+keys,order_items: primary key ['order_item_id'] unique,0,PASS,
+keys,product_catalog: primary key ['product_id'] unique,0,PASS,
+keys,"weekly_channel_performance: primary key ['week_start_date', 'channel'] unique",0,PASS,
+keys,"brand_perception_survey: primary key ['respondent_id', 'brand'] unique",0,PASS,
+joins,exposures.customer_id not in customers,0,PASS,21000 non-blank keys checked
+joins,exposures.campaign_id not in catalog,0,PASS,21000 non-blank keys checked
+joins,orders.customer_id not in customers,0,PASS,14274 non-blank keys checked
+joins,orders.attributed_exposure_id not in exposures,0,PASS,1169 non-blank keys checked
+joins,order_items.order_id not in orders,0,PASS,25086 non-blank keys checked
+joins,order_items.product_id not in products,0,PASS,25086 non-blank keys checked
+joins,survey.customer_id not in customers,0,PASS,6400 non-blank keys checked
+joins,orders with no line items,0,PASS,
+joins,weekly channels match catalog channels,identical,PASS,
+arithmetic,GMV - discount + shipping = total (orders off),0,PASS,
+arithmetic,qty x unit price = line value (lines off),0,PASS,
+arithmetic,order GMV = sum of line values (orders off),0,PASS,
+arithmetic,unit price = list price (lines off),0,PASS,all discounting is order-level
+arithmetic,negative money values in orders,0,PASS,
+attribution,attributed orders,1169,INFO,8.2% of all orders
+attribution,attributed exposure id reused by >1 order,0,PASS,
+attribution,attributed order customer != exposure customer,0,PASS,
+attribution,attributed order lag outside 1-14 days,0,PASS,lag range 1-14 days
+attribution,attributed to exposure with purchased_within_14_days=0,0,PASS,
+attribution,exposures flagged purchase=1 vs attributed orders,1169 vs 1169,INFO,flag=1 exposures without an attributed order: 0
+campaigns,exposure date outside campaign window,0,PASS,
+campaigns,exposure channel != catalog channel,0,PASS,
+campaigns,customer x campaign pairs with 2+ sends,2174,INFO,"4541 exposures sit in repeated pairs (max 5 sends); treat as frequency, not duplicates"
+funnel,opened but not delivered,0,PASS,
+funnel,clicked but not delivered,0,PASS,
+funnel,clicked without opened,1446,FLAG,"by channel: SMS=347, Email=275, Display=265, WhatsApp=213, Social=185, Search=161"
+funnel,purchased but not delivered,0,INFO,purchase may happen without contact; consider in interpretation
+compliance,exposures to customers without marketing consent,3957,FLAG,"18.8% of exposures; cost INR 16,187"
+coverage,orders by year,"2025: 11005, 2026: 3269",INFO,orders are a sample; do not read the 2026 drop as falling demand
+coverage,orders date range,2025-01-01 to 2026-10-07,INFO,
+coverage,exposure date range,2026-01-12 to 2026-09-01,INFO,
+coverage,weekly data range,2024-01-01 to 2026-10-26,INFO,
+coverage,weekly: weeks present vs expected,148 vs 148,PASS,
+design,customers never exposed (potential control),169,INFO,not randomised; no holdout -> campaign results are associations
+coverage,survey respondents / brands,800 / 8,PASS,every respondent rates every brand
+range,survey ratings outside 1-5,0,PASS,
+range,customers signup after 2025-12-31,0,PASS,
+range,customers with orders_before_2026=0 but spend>0,0,PASS,
+range,recency longer than tenure (days since last order > days since signup),794,FLAG,
+labels,seasonal campaign names vs dates/category,"New Year Reset: 12 Jan, Skincare; Winter Skin Rescue: 29 Jan, Haircare; Valentines Self Care: 21 Mar, Bodycare; Summer SPF Drive: 07 Apr, Skincare; Monsoon Care: 11 May, Haircare; Festive Preview: 01 Jul, Skincare",INFO,check names against dates and featured category
+structure,order lines repeating a product already in the same order,1567,INFO,1469 orders; arithmetic still holds - de-duplicate to product presence for basket analysis
+arithmetic,attributed order discount % = campaign discount_pct (orders off),0,PASS,
+arithmetic,non-attributed orders carrying a discount,0,INFO,discounts only exist on campaign orders
+arithmetic,shipping rule: free if (GMV - discount) >= 999 else INR 49 (orders off),0,PASS,40.3% of orders pay shipping
+consistency,customers with orders_before_2026=0 but 2025 orders in order table,595,FLAG,snapshot fields are not derived from the order sample (per brief); treat snapshot as authoritative
+consistency,"snapshot vs 2025 order-sample agreement (Spearman, buyers)","orders 0.25, spend 0.18, AOV 0.02",INFO,AOV agreement ~0: order-level baskets cannot validate the snapshot value fields (and vice versa)
+consistency,customers with orders_before_2026=0 but a days_since_last_order value,844,INFO,recency for never-buyers is undefined; handled in Phase 1
+consistency,heap at days_since_last_order = 2 (minimum value),764,INFO,next value (3 days) has 20; likely a floor - treat as 'bought in final days of 2025'
+consistency,heap at age = 18 (minimum value),520,INFO,age 19 has 91; under-18s likely recoded to 18 - avoid fine age cuts at the bottom
+consistency,survey: customers answering more than once,38,FLAG,800 respondents map to 760 customers

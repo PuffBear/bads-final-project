@@ -1,0 +1,7 @@
+channel,platform_CPA,customer_level_cost_per_order,platform_ROAS,customer_level_rev_per_contact_rupee,platform_CVR,customer_level_conv_rate
+Email,40.567,6.963,32.72,176.657,0.03,0.06
+SMS,71.338,18.091,18.939,72.546,0.026,0.052
+Social,407.317,159.562,3.331,7.962,0.021,0.049
+Search,297.153,258.264,4.57,5.116,0.045,0.051
+Display,478.324,67.573,2.835,18.049,0.011,0.059
+WhatsApp,59.858,21.773,22.31,54.222,0.039,0.063

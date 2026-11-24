@@ -1,0 +1,15 @@
+campaign_id,campaign_name,channel,featured_category,discount_pct,campaign_objective,exposures,customers,cost,buyers,conv_rate,cost_per_exposure
+C001,New Year Reset,Email,Skincare,10,Retention,1475,1318,618.65,71,0.0481,0.4194
+C002,Winter Skin Rescue,SMS,Haircare,15,Retention,1552,1383,1454.64,67,0.0432,0.9373
+C003,Glow Week,Social,Skincare,12,Retention,1466,1302,11580.14,82,0.0559,7.8991
+C004,Haircare Refresh,Search,Haircare,10,Awareness,1542,1366,20153.74,81,0.0525,13.0699
+C005,Valentines Self Care,Display,Bodycare,20,Retention,1518,1340,6073.76,84,0.0553,4.0012
+C006,Summer SPF Drive,WhatsApp,Skincare,15,Retention,1452,1285,1968.38,91,0.0627,1.3556
+C007,Weekend Flash Sale,Email,Bundles,25,Conversion,1499,1334,627.56,94,0.0627,0.4187
+C008,Monsoon Care,SMS,Haircare,18,Retention,1513,1347,1427.41,89,0.0588,0.9434
+C009,VIP Early Access,Social,Bundles,12,Reactivation,1546,1368,12035.05,66,0.0427,7.7846
+C010,Wellness Month,Search,Bodycare,10,Awareness,1504,1338,19877.12,74,0.0492,13.2162
+C011,Festive Preview,Display,Skincare,15,Retention,1438,1277,5751.58,91,0.0633,3.9997
+C012,Bundle Savings,WhatsApp,Bundles,22,Conversion,1551,1374,2124.86,97,0.0625,1.37
+C013,Payday Picks,Email,Skincare,17,Retention,1433,1264,599.06,100,0.0698,0.418
+C014,Reactivation Boost,SMS,Haircare,20,Conversion,1511,1337,1423.65,82,0.0543,0.9422

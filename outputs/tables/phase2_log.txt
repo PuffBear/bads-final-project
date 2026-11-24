@@ -1,0 +1,236 @@
+
+### headline
+                                  All orders  2025 (sample)  2026 (sample)  2026 organic  2026 campaign-attributed
+orders                             14274.000      11005.000       3269.000      2100.000                  1169.000
+customers                           5383.000       4959.000       2492.000      1784.000                  1020.000
+aov_total                           1518.901       1545.166       1430.480      1515.243                  1278.211
+median_total                        1199.000       1247.000       1168.200      1199.000                  1038.400
+gmv_mean                            1518.909       1525.815       1495.662      1495.573                  1495.821
+products_per_order                     1.648          1.657          1.616         1.616                     1.616
+units_per_order                        2.125          2.136          2.090         2.094                     2.083
+multi_product_share                    0.484          0.488          0.470         0.473                     0.463
+multi_category_share                   0.287          0.290          0.275         0.276                     0.272
+bundle_share                           0.219          0.220          0.217         0.220                     0.212
+discounted_share                       0.082          0.000          0.358         0.000                     1.000
+avg_discount_pct_when_discounted       0.161            NaN          0.161           NaN                     0.161
+paid_shipping_share                    0.403          0.395          0.431         0.401                     0.483
+cod_share                              0.233          0.234          0.230         0.227                     0.235
+rev_share_Skincare                     0.382          0.387          0.365         0.353                     0.387
+rev_share_Haircare                     0.259          0.257          0.266         0.269                     0.261
+rev_share_Bodycare                     0.113          0.111          0.117         0.121                     0.110
+rev_share_Bundles                      0.246          0.245          0.252         0.257                     0.242
+
+### by_segment_2025
+segment                           Recent actives  Lapsing regulars  Low-basket buyers  Occasional buyers  Registered, never purchased
+orders                                  2379.000          2219.000           1735.000           3608.000                     1064.000
+customers                                876.000           908.000            823.000           1757.000                      595.000
+aov_total                               1521.692          1554.779           1550.009           1539.346                     1589.441
+median_total                            1199.000          1248.000           1248.000           1199.000                     1248.000
+gmv_mean                                1501.919          1535.744           1531.397           1519.667                     1570.283
+products_per_order                         1.642             1.651              1.667              1.660                        1.680
+units_per_order                            2.095             2.156              2.148              2.132                        2.180
+multi_product_share                        0.476             0.495              0.492              0.487                        0.498
+multi_category_share                       0.285             0.283              0.300              0.293                        0.291
+bundle_share                               0.222             0.229              0.222              0.215                        0.205
+discounted_share                           0.000             0.000              0.000              0.000                        0.000
+avg_discount_pct_when_discounted             NaN               NaN                NaN                NaN                          NaN
+paid_shipping_share                        0.404             0.388              0.380              0.402                        0.391
+cod_share                                  0.242             0.236              0.233              0.229                        0.229
+rev_share_Skincare                         0.397             0.384              0.375              0.379                        0.417
+rev_share_Haircare                         0.242             0.245              0.272              0.264                        0.267
+rev_share_Bodycare                         0.109             0.117              0.112              0.113                        0.096
+rev_share_Bundles                          0.252             0.254              0.241              0.243                        0.219
+
+### by_segment_2026
+                             orders  aov_total  products_per_order  bundle_share  cod_share  discounted_share
+segment                                                                                                      
+Recent actives                740.0   1353.416               1.584         0.208      0.205             0.541
+Lapsing regulars              603.0   1466.689               1.662         0.202      0.252             0.380
+Low-basket buyers             501.0   1521.405               1.639         0.214      0.248             0.329
+Occasional buyers            1074.0   1414.891               1.605         0.235      0.233             0.290
+Registered, never purchased   351.0   1448.663               1.604         0.214      0.211             0.182
+
+### by_region
+         orders  aov_total  products_per_order  cod_share  bundle_share
+region                                                                 
+Central  1270.0   1516.080               1.653      0.240         0.221
+East     1829.0   1504.524               1.627      0.209         0.228
+North    4372.0   1507.502               1.643      0.229         0.214
+South    3470.0   1528.039               1.649      0.235         0.207
+West     3333.0   1533.303               1.662      0.246         0.232
+
+### cod_logit
+                                                              odds_ratio  ci_low  ci_high  p_value
+Intercept                                                          0.236   0.152    0.365    0.000
+C(region)[T.East]                                                  0.841   0.713    0.991    0.039
+C(region)[T.North]                                                 0.940   0.816    1.084    0.395
+C(region)[T.South]                                                 0.974   0.842    1.128    0.727
+C(region)[T.West]                                                  1.030   0.892    1.190    0.685
+C(annual_income_band_inr, Treatment('8L-15L'))[T.15L-25L]          0.967   0.864    1.083    0.561
+C(annual_income_band_inr, Treatment('8L-15L'))[T.25L+]             1.023   0.889    1.178    0.748
+C(annual_income_band_inr, Treatment('8L-15L'))[T.4L-8L]            0.943   0.851    1.044    0.255
+C(annual_income_band_inr, Treatment('8L-15L'))[T.Under 4L]         0.988   0.879    1.110    0.834
+C(segment, Treatment('Occasional buyers'))[T.Recent actives]       1.026   0.924    1.140    0.629
+C(segment, Treatment('Occasional buyers'))[T.Lapsing regu...       1.050   0.943    1.169    0.378
+C(segment, Treatment('Occasional buyers'))[T.Low-basket b...       1.036   0.920    1.167    0.559
+C(segment, Treatment('Occasional buyers'))[T.Registered, ...       0.979   0.852    1.126    0.770
+C(gender)[T.Male]                                                  0.995   0.919    1.077    0.898
+C(gender)[T.Non-disclosed]                                         1.004   0.793    1.271    0.975
+attributed[T.True]                                                 1.037   0.875    1.229    0.673
+C(year)[T.2026]                                                    0.967   0.866    1.080    0.550
+np.log(gross_merchandise_value_inr)                                1.052   0.995    1.111    0.074
+age                                                                0.998   0.994    1.002    0.428
+
+### cod_pseudo_r2
+0.0011
+
+### cod_customer_mix
+mean
+never COD     0.353
+<1/3          0.436
+1/3-2/3       0.195
+>2/3          0.011
+always COD    0.004
+Name: proportion, dtype: float64
+
+### cod_habit
+observed_always              0.0044
+expected_always_if_random    0.0067
+observed_never               0.3533
+expected_never_if_random     0.3633
+dtype: float64
+
+### threshold_bunching
+obs_share_999_1199            0.0775
+sim_share_999_1199            0.0779
+obs_share_799_999             0.0981
+sim_share_799_999             0.0974
+ratio_above_below_obs         0.7907
+ratio_above_below_sim_mean    0.7998
+ratio_sim_p95                 0.8543
+perm_p_value                  0.6033
+dtype: float64
+
+### shipping_gap
+gap_to_free
+<=100      0.138
+101-250    0.170
+251-400    0.269
+401-600    0.289
+601-800    0.134
+Name: proportion, dtype: float64
+
+### shipping_stats
+orders_paying_shipping             5754.000
+share_of_orders                       0.403
+shipping_revenue_sample          281946.000
+share_within_250_of_threshold         0.307
+share_single_product                  0.886
+median_net_value                    649.000
+dtype: float64
+
+### addon_candidates
+          product_name  category  list_price_inr
+12            Lip Balm  Bodycare             249
+0       Daily Cleanser  Skincare             349
+11           Body Wash  Bodycare             399
+10         Body Lotion  Bodycare             449
+6       Gentle Shampoo  Haircare             499
+7   Repair Conditioner  Haircare             549
+
+### campaign_baskets
+   campaign_id         campaign_name   channel featured_category  camp_discount_pct  orders      gmv    total  products  bought_featured  bundle_share
+0         C001        New Year Reset     Email          Skincare                 10      71  1472.61  1347.43      1.68             0.66          0.15
+1         C002    Winter Skin Rescue       SMS          Haircare                 15      67  1655.39  1426.09      1.64             0.40          0.25
+2         C003             Glow Week    Social          Skincare                 12      82  1346.35  1209.89      1.54             0.56          0.20
+3         C004      Haircare Refresh    Search          Haircare                 10      81  1558.89  1425.38      1.62             0.46          0.14
+4         C005  Valentines Self Care   Display          Bodycare                 20      84  1361.65  1114.99      1.60             0.38          0.15
+5         C006      Summer SPF Drive  WhatsApp          Skincare                 15      91  1429.38  1239.75      1.49             0.55          0.23
+6         C007    Weekend Flash Sale     Email           Bundles                 25      94  1421.84  1097.14      1.61             0.22          0.22
+7         C008          Monsoon Care       SMS          Haircare                 18      89  1632.47  1361.20      1.76             0.44          0.19
+8         C009      VIP Early Access    Social           Bundles                 12      66  1564.58  1400.58      1.58             0.36          0.36
+9         C010        Wellness Month    Search          Bodycare                 10      74  1368.91  1254.53      1.57             0.42          0.18
+10        C011       Festive Preview   Display          Skincare                 15      91  1576.40  1359.86      1.75             0.56          0.24
+11        C012        Bundle Savings  WhatsApp           Bundles                 22      97  1472.24  1173.10      1.49             0.27          0.27
+12        C013          Payday Picks     Email          Skincare                 17     100  1585.90  1337.37      1.67             0.52          0.21
+13        C014    Reactivation Boost       SMS          Haircare                 20      82  1508.20  1232.25      1.63             0.33          0.18
+
+### discount_vs_gmv
+coef_per_pct_point         0.0016
+p_value                    0.7622
+pct_change_gmv_per_+5pp    0.8022
+dtype: float64
+
+### within_customer_gmv
+customers_with_both     312.0000
+median_campaign_gmv    1235.0000
+median_organic_gmv     1247.0000
+mean_diff                 8.9220
+wilcoxon_p                0.9014
+dtype: float64
+
+### featured_uptake
+          campaign_orders_containing_featured  organic_2026_orders_containing  p_value
+Bodycare                               0.3987                          0.3090   0.0193
+Bundles                                0.2763                          0.2200   0.0418
+Haircare                               0.4075                          0.3348   0.0108
+Skincare                               0.5655                          0.4343   0.0000
+
+### mix_by_segment
+                             Skincare  Haircare  Bodycare  Bundles
+segment                                                           
+Recent actives                  0.392     0.247     0.111    0.249
+Lapsing regulars                0.390     0.240     0.117    0.253
+Low-basket buyers               0.373     0.277     0.110    0.241
+Occasional buyers               0.371     0.264     0.116    0.249
+Registered, never purchased     0.397     0.275     0.100    0.227
+
+### preferred_vs_bought
+                    Skincare  Haircare  Bodycare  Bundles
+preferred_category                                       
+Bodycare               0.166     0.152     0.822    0.179
+Bundles                0.159     0.181     0.167    0.804
+Haircare               0.159     0.830     0.173    0.169
+Skincare               0.823     0.161     0.160    0.166
+
+### buys_preferred_share
+0.8231049460557657
+
+### single_category_share
+0.7134650413338938
+
+### interpurchase_days
+                              count   25%   50%    75%
+segment                                               
+Recent actives               1503.0  26.0  60.0  115.0
+Lapsing regulars             1311.0  28.0  69.0  127.0
+Low-basket buyers             912.0  33.0  71.0  133.0
+Occasional buyers            1851.0  32.0  71.0  135.0
+Registered, never purchased   469.0  39.0  79.0  156.0
+
+### dow_orders
+order_date
+Saturday     2139
+Friday       2058
+Sunday       2051
+Tuesday      2046
+Thursday     2036
+Wednesday    2022
+Monday       1922
+Name: count, dtype: int64
+
+### tests
+                                                       question                  test        stat  p_value      n            effect
+0                           2025 order value differs by segment        Kruskal-Wallis      5.5815   0.2327  11005               NaN
+1                                  cod share differs by segment            chi-square      1.5754   0.8132  14274  Cramer's V 0.011
+2                           has_bundle share differs by segment            chi-square      1.5726   0.8137  14274  Cramer's V 0.010
+3                        paid_shipping share differs by segment            chi-square      8.8753   0.0643  14274  Cramer's V 0.025
+4                                 order value differs by region        Kruskal-Wallis      1.4668   0.8325  14274               NaN
+5                                   COD share differs by region            chi-square      9.6721   0.0463  14274  Cramer's V 0.026
+6                                   order value differs by city        Kruskal-Wallis     21.7657   0.2961  14274               NaN
+7                                     COD share differs by city            chi-square     22.8407   0.2444  14274  Cramer's V 0.040
+8                        main basket category differs by region            chi-square     14.0545   0.2972  14274  Cramer's V 0.018
+9                            orders evenly spread over weekdays        chi-square GOF         NaN   0.0612  14274               NaN
+10           campaign GMV vs same customers' organic GMV (2026)  Wilcoxon signed-rank  23141.5000   0.9014    312               NaN
+11               discount % predicts log GMV of campaign orders               OLS HC1      0.3026   0.7622   1169               NaN
+12  orders just above Rs 999 over-represented vs random baskets     permutation (300)      0.7907   0.6033  13105               NaN

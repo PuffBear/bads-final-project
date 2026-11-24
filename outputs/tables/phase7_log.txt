@@ -1,0 +1,169 @@
+
+### decomposition_fit
+R2                                 0.700
+trend growth per year              0.230
+seasonal swing (max/min factor)    1.395
+remainder sd (log)                 0.125
+dtype: float64
+
+### variance_shares_log
+trend       0.552
+seasonal    0.152
+residual    0.300
+dtype: float64
+
+### trend_growth_per_year_conversions
+0.2308
+
+### trend_growth_per_year_ad_spend_inr
+0.1802
+
+### trend_growth
+Jan24->Jan25               0.229
+Jan25->Jan26               0.229
+Oct25->Oct26 (last 52w)    0.229
+dtype: float64
+
+### yoy_weeks_1_43
+      attributed_revenue_inr  conversions  ad_spend_inr
+year                                                   
+2024                     NaN          NaN           NaN
+2025                    20.2         18.9          16.1
+2026                    19.1         20.9          13.4
+
+### blended_roas_by_year
+week_start_date
+2024    7.00
+2025    7.31
+2026    7.60
+dtype: float64
+
+### monthly_seasonal_index
+month
+1      90.0
+2      96.0
+3     100.0
+4     108.0
+5     116.0
+6     112.0
+7     104.0
+8     101.0
+9      88.0
+10     95.0
+11     93.0
+12    101.0
+Name: sf, dtype: float64
+
+### monthly_pattern_corr_between_years
+year  2024  2025  2026
+year                  
+2024  1.00  0.62  0.93
+2025  0.62  1.00  0.78
+2026  0.93  0.78  1.00
+
+### weekly_pattern_corr_between_years
+year  2024  2025  2026
+year                  
+2024  1.00  0.43  0.48
+2025  0.43  1.00  0.32
+2026  0.48  0.32  1.00
+
+### peak_weeks_vs_trend
+                    revenue       trend  index_vs_trend
+week_start_date                                        
+2026-05-25       5276539.05  2769068.35            1.91
+2024-05-06       2660186.73  1812628.80            1.47
+2024-06-10       2586755.84  1848877.62            1.40
+2026-08-10       3967780.71  2892358.45            1.37
+2025-04-28       2993638.69  2218306.91            1.35
+2024-04-08       2335309.98  1784142.11            1.31
+2026-06-22       3673531.09  2813280.97            1.31
+2026-04-13       3517973.94  2704048.82            1.30
+2026-06-08       3601535.59  2791087.12            1.29
+2025-05-05       2828070.78  2227109.09            1.27
+
+### trough_weeks_vs_trend
+                    revenue       trend  index_vs_trend
+week_start_date                                        
+2024-09-09       1498696.14  1946553.39            0.77
+2024-09-23       1500240.23  1962031.77            0.76
+2025-10-20       1848407.93  2449165.20            0.75
+2026-09-07       2188373.69  2938539.59            0.74
+2026-01-12       1910449.47  2568362.83            0.74
+2024-09-02       1291852.03  1938860.05            0.67
+
+### spend_vs_demand
+R2 trend+season                 0.7003
+R2 + log spend                  0.7598
+spend elasticity (total)        0.7756
+se                              0.1429
+trend per year without spend    0.2295
+trend per year net of spend     0.0813
+dtype: float64
+
+### forecast_eval_mean_over_3_origins
+                                                                    MAPE       RMSE  bias_pct  total_error_pct
+target                 model                                                                                  
+attributed_revenue_inr Harmonic regression + AR(1)                 12.86  572544.80     -1.07            -1.07
+                       Harmonic regression + AR(1) + actual spend  10.88  496900.31     -1.71            -1.71
+                       Holt-Winters (damped, mult.)                15.64  688120.24     -0.29            -0.29
+                       Seasonal naive x growth                     14.15  695381.17     -2.66            -2.66
+conversions            Harmonic regression + AR(1)                 10.51     388.54     -3.16            -3.16
+                       Harmonic regression + AR(1) + actual spend   9.23     328.79     -3.90            -3.90
+                       Holt-Winters (damped, mult.)                13.83     460.47     -2.38            -2.38
+                       Seasonal naive x growth                     12.41     465.98     -4.58            -4.58
+
+### forecast_eval_last_origin
+                                                                    MAPE  bias_pct  total_error_pct
+target                 model                                                                       
+attributed_revenue_inr Seasonal naive x growth                     12.91     -3.73            -3.73
+                       Holt-Winters (damped, mult.)                11.74     -6.77            -6.77
+                       Harmonic regression + AR(1)                 11.82     -2.02            -2.02
+                       Harmonic regression + AR(1) + actual spend   9.97     -3.49            -3.49
+conversions            Seasonal naive x growth                     11.55     -6.30            -6.30
+                       Holt-Winters (damped, mult.)                11.27    -10.32           -10.32
+                       Harmonic regression + AR(1)                  9.35     -4.96            -4.96
+                       Harmonic regression + AR(1) + actual spend   9.35     -6.51            -6.51
+
+### best_univariate_revenue
+Harmonic regression + AR(1)
+
+### annual_totals_lakh
+2024 actual                               1000.4
+2025 actual                               1223.4
+2026 actual Jan-Oct + forecast Nov-Dec    1484.4
+2027 forecast (ensemble)                  1771.3
+2027 Holt-Winters                         1711.7
+2027 harmonic+AR1                         1830.9
+2027 seasonal naive                       1789.8
+dtype: float64
+
+### growth_2027_vs_2026
+0.1933
+
+### forecast_2027_monthly_lakh
+     ensemble  model_low  model_high  share_of_year  seasonal_index
+Jan    110.05     105.86      114.25           0.06           89.73
+Feb    120.33     117.14      123.22           0.07           95.98
+Mar    162.11     159.01      167.59           0.09          100.43
+Apr    141.64     138.42      144.87           0.08          108.27
+May    194.71     191.41      211.72           0.11          115.92
+Jun    152.51     150.70      168.24           0.09          112.01
+Jul    139.01     131.93      146.10           0.08          103.83
+Aug    173.59     166.45      188.73           0.10          100.79
+Sep    121.96     116.34      127.58           0.07           87.78
+Oct    135.33     128.61      142.05           0.08           95.48
+Nov    167.96     143.69      176.81           0.09           92.68
+Dec    152.09     144.88      157.79           0.09          101.42
+
+### annual_2027_range_lakh
+model low                           1711.7
+ensemble                            1771.3
+model high                          1830.9
+max backtest 26-wk total error %       2.7
+dtype: float64
+
+### conversions_2027
+2025 actual       90244.0
+2027 forecast    134059.0
+dtype: float64

@@ -1,0 +1,27 @@
+antecedent,consequent,confidence,lift,orders_together
+P01 Daily Cleanser,P02 Hydrating Moisturiser,0.118,1.203,155
+P02 Hydrating Moisturiser,P01 Daily Cleanser,0.111,1.203,155
+P04 Vitamin C Serum,P14 Face Mask,0.112,1.222,151
+P06 Night Repair Cream,P14 Face Mask,0.113,1.232,146
+P07 Gentle Shampoo,P10 Scalp Scrub,0.153,1.49,218
+P07 Gentle Shampoo,P09 Hair Growth Serum,0.151,1.457,214
+P08 Repair Conditioner,P10 Scalp Scrub,0.149,1.445,216
+P08 Repair Conditioner,P07 Gentle Shampoo,0.143,1.44,208
+P09 Hair Growth Serum,P07 Gentle Shampoo,0.145,1.457,214
+P09 Hair Growth Serum,P10 Scalp Scrub,0.136,1.323,201
+P10 Scalp Scrub,P07 Gentle Shampoo,0.148,1.49,218
+P10 Scalp Scrub,P08 Repair Conditioner,0.147,1.445,216
+P11 Body Lotion,P12 Body Wash,0.176,1.479,297
+P11 Body Lotion,P13 Lip Balm,0.164,1.416,277
+P12 Body Wash,P13 Lip Balm,0.188,1.624,318
+P12 Body Wash,P11 Body Lotion,0.175,1.479,297
+P13 Lip Balm,P12 Body Wash,0.193,1.624,318
+P13 Lip Balm,P11 Body Lotion,0.168,1.416,277
+P14 Face Mask,P06 Night Repair Cream,0.112,1.232,146
+P14 Face Mask,P04 Vitamin C Serum,0.115,1.222,151
+P15 Travel Skincare Kit,P17 Glow Essentials Kit,0.093,1.445,75
+P15 Travel Skincare Kit,P18 Bodycare Combo,0.084,1.349,68
+P17 Glow Essentials Kit,P15 Travel Skincare Kit,0.082,1.445,75
+P17 Glow Essentials Kit,P18 Bodycare Combo,0.082,1.304,75
+P18 Bodycare Combo,P15 Travel Skincare Kit,0.076,1.349,68
+P18 Bodycare Combo,P17 Glow Essentials Kit,0.084,1.304,75

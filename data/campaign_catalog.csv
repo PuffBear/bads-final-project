@@ -1,0 +1,15 @@
+campaign_id,campaign_name,channel,featured_category,start_date,end_date,discount_pct,campaign_objective
+C001,New Year Reset,Email,Skincare,2026-01-12,2026-01-23,10,Retention
+C002,Winter Skin Rescue,SMS,Haircare,2026-01-29,2026-02-09,15,Retention
+C003,Glow Week,Social,Skincare,2026-02-15,2026-02-26,12,Retention
+C004,Haircare Refresh,Search,Haircare,2026-03-04,2026-03-15,10,Awareness
+C005,Valentines Self Care,Display,Bodycare,2026-03-21,2026-04-01,20,Retention
+C006,Summer SPF Drive,WhatsApp,Skincare,2026-04-07,2026-04-18,15,Retention
+C007,Weekend Flash Sale,Email,Bundles,2026-04-24,2026-05-05,25,Conversion
+C008,Monsoon Care,SMS,Haircare,2026-05-11,2026-05-22,18,Retention
+C009,VIP Early Access,Social,Bundles,2026-05-28,2026-06-08,12,Reactivation
+C010,Wellness Month,Search,Bodycare,2026-06-14,2026-06-25,10,Awareness
+C011,Festive Preview,Display,Skincare,2026-07-01,2026-07-12,15,Retention
+C012,Bundle Savings,WhatsApp,Bundles,2026-07-18,2026-07-29,22,Conversion
+C013,Payday Picks,Email,Skincare,2026-08-04,2026-08-15,17,Retention
+C014,Reactivation Boost,SMS,Haircare,2026-08-21,2026-09-01,20,Conversion

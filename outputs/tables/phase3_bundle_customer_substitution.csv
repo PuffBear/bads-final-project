@@ -1,0 +1,5 @@
+bundle,components,customers,bundle_buyers,comp_rate_bundle_buyers,comp_rate_others,odds_ratio,ci_low,ci_high,p_value
+Travel Skincare Kit,Daily Cleanser + Hydrating Moisturiser + SPF 50 Sunscreen,3993,638,0.373,0.5183,0.9398,0.7438,1.1874,0.6027
+Haircare Duo,Gentle Shampoo + Repair Conditioner,3988,692,0.2991,0.3899,0.8509,0.6762,1.0708,0.1686
+Glow Essentials Kit,Vitamin C Serum + Niacinamide Serum + Hydrating Moisturiser,3986,691,0.3676,0.5068,0.9199,0.7334,1.1537,0.4698
+Bodycare Combo,Body Lotion + Body Wash,3988,690,0.3594,0.4381,0.9291,0.7477,1.1545,0.5069

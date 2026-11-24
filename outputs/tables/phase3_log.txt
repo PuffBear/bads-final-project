@@ -1,0 +1,165 @@
+
+### n_baskets
+14274
+
+### multi_product_baskets
+6904
+
+### rule_counts
+frequent_itemsets                          103.0
+rules                                      174.0
+significant_positive (q<0.05, lift>1)       36.0
+of which pairs                              30.0
+of which triples                             6.0
+significant within-category share            1.0
+significant cross-category rules             0.0
+rules with lift < 1 and q(lower) < 0.05     96.0
+dtype: float64
+
+### negative_pairs_within_vs_cross
+within_category
+False    48
+Name: count, dtype: int64
+
+### top_pair_rules
+                  antecedent               consequent  orders_together  support  confidence    lift  q_value
+141            P12 Body Wash             P13 Lip Balm              318   0.0223      0.1877  1.6240   0.0000
+87        P07 Gentle Shampoo          P10 Scalp Scrub              218   0.0153      0.1534  1.4897   0.0000
+128          P11 Body Lotion            P12 Body Wash              297   0.0208      0.1755  1.4791   0.0000
+85        P07 Gentle Shampoo    P09 Hair Growth Serum              214   0.0150      0.1506  1.4574   0.0000
+101   P08 Repair Conditioner          P10 Scalp Scrub              216   0.0151      0.1489  1.4455   0.0000
+158  P15 Travel Skincare Kit  P17 Glow Essentials Kit               75   0.0053      0.0931  1.4453   0.0054
+83        P07 Gentle Shampoo   P08 Repair Conditioner              208   0.0146      0.1464  1.4400   0.0000
+130          P11 Body Lotion             P13 Lip Balm              277   0.0194      0.1637  1.4163   0.0000
+160  P15 Travel Skincare Kit       P18 Bodycare Combo               68   0.0048      0.0844  1.3486   0.0363
+113    P09 Hair Growth Serum          P10 Scalp Scrub              201   0.0141      0.1363  1.3232   0.0001
+166  P17 Glow Essentials Kit       P18 Bodycare Combo               75   0.0053      0.0816  1.3045   0.0491
+99    P08 Repair Conditioner    P09 Hair Growth Serum              185   0.0130      0.1275  1.2338   0.0072
+
+### top_triples
+                          antecedent                       consequent  orders_together  confidence    lift  q_value
+173                    P12 Body Wash   P11 Body Lotion + P13 Lip Balm               65      0.0384  1.9773   0.0000
+168   P11 Body Lotion + P13 Lip Balm                    P12 Body Wash               65      0.2347  1.9773   0.0000
+169  P11 Body Lotion + P12 Body Wash                     P13 Lip Balm               65      0.2189  1.8933   0.0000
+172                     P13 Lip Balm  P11 Body Lotion + P12 Body Wash               65      0.0394  1.8933   0.0000
+170     P12 Body Wash + P13 Lip Balm                  P11 Body Lotion               65      0.2044  1.7244   0.0001
+171                  P11 Body Lotion     P12 Body Wash + P13 Lip Balm               65      0.0384  1.7244   0.0001
+
+### cross_category_sig
+Empty DataFrame
+Columns: [antecedent, consequent, categories, orders_together, confidence, lift, q_value]
+Index: []
+
+### all_pairs_summary
+direction          n.s.  negative  positive  All
+within_category                                 
+across categories     0       117         0  117
+within category      17         0        19   36
+All                  17       117        19  153
+
+### all_pairs_lift_by_type
+                 count    min    50%    max
+within_category                            
+False            117.0  0.300  0.465  0.760
+True              36.0  0.938  1.203  1.624
+
+### cross_sell
+                    antecedent                 consequent  confidence   lift  orders_together
+0           P01 Daily Cleanser  P02 Hydrating Moisturiser       0.118  1.203              155
+1    P02 Hydrating Moisturiser         P01 Daily Cleanser       0.111  1.203              155
+57         P04 Vitamin C Serum              P14 Face Mask       0.112  1.222              151
+81      P06 Night Repair Cream              P14 Face Mask       0.113  1.232              146
+87          P07 Gentle Shampoo            P10 Scalp Scrub       0.153  1.490              218
+85          P07 Gentle Shampoo      P09 Hair Growth Serum       0.151  1.457              214
+101     P08 Repair Conditioner            P10 Scalp Scrub       0.149  1.445              216
+82      P08 Repair Conditioner         P07 Gentle Shampoo       0.143  1.440              208
+84       P09 Hair Growth Serum         P07 Gentle Shampoo       0.145  1.457              214
+113      P09 Hair Growth Serum            P10 Scalp Scrub       0.136  1.323              201
+86             P10 Scalp Scrub         P07 Gentle Shampoo       0.148  1.490              218
+100            P10 Scalp Scrub     P08 Repair Conditioner       0.147  1.445              216
+128            P11 Body Lotion              P12 Body Wash       0.176  1.479              297
+130            P11 Body Lotion               P13 Lip Balm       0.164  1.416              277
+141              P12 Body Wash               P13 Lip Balm       0.188  1.624              318
+129              P12 Body Wash            P11 Body Lotion       0.175  1.479              297
+140               P13 Lip Balm              P12 Body Wash       0.193  1.624              318
+131               P13 Lip Balm            P11 Body Lotion       0.168  1.416              277
+80               P14 Face Mask     P06 Night Repair Cream       0.112  1.232              146
+56               P14 Face Mask        P04 Vitamin C Serum       0.115  1.222              151
+158    P15 Travel Skincare Kit    P17 Glow Essentials Kit       0.093  1.445               75
+160    P15 Travel Skincare Kit         P18 Bodycare Combo       0.084  1.349               68
+159    P17 Glow Essentials Kit    P15 Travel Skincare Kit       0.082  1.445               75
+166    P17 Glow Essentials Kit         P18 Bodycare Combo       0.082  1.304               75
+161         P18 Bodycare Combo    P15 Travel Skincare Kit       0.076  1.349               68
+167         P18 Bodycare Combo    P17 Glow Essentials Kit       0.084  1.304               75
+
+### category_incidence
+Skincare    0.474
+Haircare    0.329
+Bodycare    0.295
+Bundles     0.219
+dtype: float64
+
+### category_pair_lift
+          Skincare  Haircare  Bodycare  Bundles
+Skincare       NaN     0.454     0.504    0.600
+Haircare     0.454       NaN     0.551    0.668
+Bodycare     0.504     0.551       NaN    0.674
+Bundles      0.600     0.668     0.674      NaN
+
+### single_category_multi_baskets
+observed                   0.4076
+expected_if_independent    0.1808
+sim_p95                    0.1874
+dtype: float64
+
+### rule_stability
+                                                pair  lift_all  lift_2025  lift_2026  Recent actives  Lapsing regulars  Low-basket buyers  Occasional buyers  Registered, never purchased  campaign_orders
+0                       P12 Body Wash & P13 Lip Balm      1.62       1.64       1.56            1.44              1.80               1.73               1.45                         2.13             1.39
+1               P07 Gentle Shampoo & P10 Scalp Scrub      1.49       1.52       1.39            1.33              1.78               1.32               1.44                         1.65             1.37
+2                    P11 Body Lotion & P12 Body Wash      1.48       1.40       1.75            1.36              1.57               1.41               1.41                         1.93             1.53
+3         P07 Gentle Shampoo & P09 Hair Growth Serum      1.46       1.41       1.61            1.31              1.62               1.51               1.37                         1.62             1.39
+4           P08 Repair Conditioner & P10 Scalp Scrub      1.45       1.45       1.42            1.30              1.57               1.41               1.33                         1.92             0.89
+5  P15 Travel Skincare Kit & P17 Glow Essentials Kit      1.45       1.24       2.17            1.43              1.45               1.08               1.81                         0.85             1.77
+6        P07 Gentle Shampoo & P08 Repair Conditioner      1.44       1.39       1.61            1.30              1.71               1.15               1.44                         1.72             1.80
+7                     P11 Body Lotion & P13 Lip Balm      1.42       1.47       1.25            1.50              1.65               1.34               1.28                         1.36             1.46
+8       P15 Travel Skincare Kit & P18 Bodycare Combo      1.35       1.36       1.30            1.38              1.25               1.56               1.34                         1.15             1.47
+9            P09 Hair Growth Serum & P10 Scalp Scrub      1.32       1.29       1.45            1.20              1.37               1.16               1.49                         1.20             1.46
+
+### bundle_vs_components_same_basket
+                bundle              component  together    lift  p_less  p_greater
+0  Travel Skincare Kit         Daily Cleanser        32  0.4310  0.0000        1.0
+1  Travel Skincare Kit  Hydrating Moisturiser        40  0.5067  0.0000        1.0
+2  Travel Skincare Kit       SPF 50 Sunscreen        24  0.3470  0.0000        1.0
+3         Haircare Duo         Gentle Shampoo        53  0.5942  0.0000        1.0
+4         Haircare Duo     Repair Conditioner        46  0.5050  0.0000        1.0
+5  Glow Essentials Kit        Vitamin C Serum        47  0.5411  0.0000        1.0
+6  Glow Essentials Kit      Niacinamide Serum        51  0.6267  0.0001        1.0
+7  Glow Essentials Kit  Hydrating Moisturiser        54  0.6000  0.0000        1.0
+8       Bodycare Combo            Body Lotion        65  0.6141  0.0000        1.0
+9       Bodycare Combo              Body Wash        66  0.6228  0.0000        1.0
+
+### bundle_customer_level
+                bundle                                                   components  customers  bundle_buyers  comp_rate_bundle_buyers  comp_rate_others  odds_ratio  ci_low  ci_high  p_value
+0  Travel Skincare Kit    Daily Cleanser + Hydrating Moisturiser + SPF 50 Sunscreen       3993            638                    0.373             0.518       0.940   0.744    1.187    0.603
+1         Haircare Duo                          Gentle Shampoo + Repair Conditioner       3988            692                    0.299             0.390       0.851   0.676    1.071    0.169
+2  Glow Essentials Kit  Vitamin C Serum + Niacinamide Serum + Hydrating Moisturiser       3986            691                    0.368             0.507       0.920   0.733    1.154    0.470
+3       Bodycare Combo                                      Body Lotion + Body Wash       3988            690                    0.359             0.438       0.929   0.748    1.154    0.507
+
+### bundle_sequence
+                bundle  transitions_after_bundle  p_components  p_repeat_bundle  next_has_components_after_bundle  next_has_components_otherwise  next_has_same_bundle_after_bundle  next_has_same_bundle_otherwise
+0  Travel Skincare Kit                       522         0.001              0.0                             0.182                          0.247                              0.115                           0.052
+1         Haircare Duo                       548         0.025              0.0                             0.148                          0.186                              0.109                           0.060
+2  Glow Essentials Kit                       551         0.009              0.0                             0.207                          0.257                              0.123                           0.059
+3       Bodycare Combo                       571         0.427              0.0                             0.205                          0.219                              0.121                           0.060
+
+### bundle_basket_value
+            orders      gmv  products  extra_singles
+has_bundle                                          
+0            11148  1278.09      1.56           1.56
+1             3126  2377.72      1.97           0.85
+
+### bundle_campaign_windows
+type              bundle  component  other single  days  bundle_units_per_day  component_units_per_day  other single_units_per_day  bundle_share_of_units
+in_bundle_window                                                                                                                                         
+False                706       2618          1495   202                 3.495                   12.960                       7.401                  0.147
+True                 323       1057           633    78                 4.141                   13.551                       8.115                  0.160

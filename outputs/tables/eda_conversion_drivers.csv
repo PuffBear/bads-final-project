@@ -1,0 +1,14 @@
+,,mean,size
+recency_band,0-30,0.1025,5367
+recency_band,31-90,0.0526,6330
+recency_band,91-180,0.0399,4992
+recency_band,181-365,0.0227,3576
+recency_band,365+,0.0082,735
+orders_band,0,0.0224,2853
+orders_band,1-2,0.0457,10237
+orders_band,3-5,0.0735,7143
+orders_band,6+,0.146,767
+marketing_consent,0,0.0516,3957
+marketing_consent,1,0.0566,17043
+cat_match,match,0.0806,5859
+cat_match,no match,0.046,15141

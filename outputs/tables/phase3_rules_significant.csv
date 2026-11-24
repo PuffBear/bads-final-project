@@ -1,0 +1,37 @@
+antecedent,consequent,categories,within_category,n_items,orders_together,support,confidence,lift,leverage,conviction,p_value,q_value
+P12 Body Wash,P11 Body Lotion + P13 Lip Balm,Bodycare,True,3,65,0.00455,0.03837,1.97727,0.00225,1.01972,0.0,0.0
+P11 Body Lotion + P13 Lip Balm,P12 Body Wash,Bodycare,True,3,65,0.00455,0.23466,1.97727,0.00225,1.15154,0.0,0.0
+P11 Body Lotion + P12 Body Wash,P13 Lip Balm,Bodycare,True,3,65,0.00455,0.21886,1.8933,0.00215,1.13219,0.0,0.0
+P13 Lip Balm,P11 Body Lotion + P12 Body Wash,Bodycare,True,3,65,0.00455,0.03939,1.8933,0.00215,1.01935,0.0,0.0
+P12 Body Wash + P13 Lip Balm,P11 Body Lotion,Bodycare,True,3,65,0.00455,0.2044,1.72437,0.00191,1.10793,1e-05,6e-05
+P11 Body Lotion,P12 Body Wash + P13 Lip Balm,Bodycare,True,3,65,0.00455,0.03842,1.72437,0.00191,1.01678,1e-05,6e-05
+P13 Lip Balm,P12 Body Wash,Bodycare,True,2,318,0.02228,0.19273,1.62396,0.00856,1.09173,0.0,0.0
+P12 Body Wash,P13 Lip Balm,Bodycare,True,2,318,0.02228,0.18772,1.62396,0.00856,1.0888,0.0,0.0
+P10 Scalp Scrub,P07 Gentle Shampoo,Haircare,True,2,218,0.01527,0.1483,1.48967,0.00502,1.05724,0.0,0.0
+P07 Gentle Shampoo,P10 Scalp Scrub,Haircare,True,2,218,0.01527,0.15341,1.48967,0.00502,1.05957,0.0,0.0
+P11 Body Lotion,P12 Body Wash,Bodycare,True,2,297,0.02081,0.17553,1.47907,0.00674,1.06896,0.0,0.0
+P12 Body Wash,P11 Body Lotion,Bodycare,True,2,297,0.02081,0.17532,1.47907,0.00674,1.06886,0.0,0.0
+P09 Hair Growth Serum,P07 Gentle Shampoo,Haircare,True,2,214,0.01499,0.14508,1.45738,0.00471,1.05326,0.0,0.0
+P07 Gentle Shampoo,P09 Hair Growth Serum,Haircare,True,2,214,0.01499,0.1506,1.45738,0.00471,1.05564,0.0,0.0
+P08 Repair Conditioner,P10 Scalp Scrub,Haircare,True,2,216,0.01513,0.14886,1.44549,0.00466,1.0539,0.0,0.0
+P10 Scalp Scrub,P08 Repair Conditioner,Haircare,True,2,216,0.01513,0.14694,1.44549,0.00466,1.05309,0.0,0.0
+P15 Travel Skincare Kit,P17 Glow Essentials Kit,Bundles,True,2,75,0.00525,0.09305,1.44529,0.00162,1.03161,0.00074,0.00538
+P17 Glow Essentials Kit,P15 Travel Skincare Kit,Bundles,True,2,75,0.00525,0.08161,1.44529,0.00162,1.02738,0.00074,0.00538
+P08 Repair Conditioner,P07 Gentle Shampoo,Haircare,True,2,208,0.01457,0.14335,1.43995,0.00445,1.05113,0.0,0.0
+P07 Gentle Shampoo,P08 Repair Conditioner,Haircare,True,2,208,0.01457,0.14638,1.43995,0.00445,1.05239,0.0,0.0
+P13 Lip Balm,P11 Body Lotion,Bodycare,True,2,277,0.01941,0.16788,1.41625,0.0057,1.0593,0.0,0.0
+P11 Body Lotion,P13 Lip Balm,Bodycare,True,2,277,0.01941,0.16371,1.41625,0.0057,1.05754,0.0,0.0
+P18 Bodycare Combo,P15 Travel Skincare Kit,Bundles,True,2,68,0.00476,0.07615,1.34855,0.00123,1.0213,0.00687,0.03635
+P15 Travel Skincare Kit,P18 Bodycare Combo,Bundles,True,2,68,0.00476,0.08437,1.34855,0.00123,1.02382,0.00687,0.03635
+P10 Scalp Scrub,P09 Hair Growth Serum,Haircare,True,2,201,0.01408,0.13673,1.32322,0.00344,1.03869,1e-05,9e-05
+P09 Hair Growth Serum,P10 Scalp Scrub,Haircare,True,2,201,0.01408,0.13627,1.32322,0.00344,1.03854,1e-05,9e-05
+P17 Glow Essentials Kit,P18 Bodycare Combo,Bundles,True,2,75,0.00525,0.08161,1.30449,0.00123,1.02074,0.01016,0.0491
+P18 Bodycare Combo,P17 Glow Essentials Kit,Bundles,True,2,75,0.00525,0.08399,1.30449,0.00123,1.0214,0.01016,0.0491
+P08 Repair Conditioner,P09 Hair Growth Serum,Haircare,True,2,185,0.01296,0.1275,1.23384,0.00246,1.02769,0.00108,0.00721
+P09 Hair Growth Serum,P08 Repair Conditioner,Haircare,True,2,185,0.01296,0.12542,1.23384,0.00246,1.02718,0.00108,0.00721
+P14 Face Mask,P06 Night Repair Cream,Skincare,True,2,146,0.01023,0.11162,1.23223,0.00193,1.02368,0.00385,0.02392
+P06 Night Repair Cream,P14 Face Mask,Skincare,True,2,146,0.01023,0.11292,1.23223,0.00193,1.02399,0.00385,0.02392
+P04 Vitamin C Serum,P14 Face Mask,Skincare,True,2,151,0.01058,0.11193,1.22153,0.00192,1.02286,0.00459,0.0266
+P14 Face Mask,P04 Vitamin C Serum,Skincare,True,2,151,0.01058,0.11544,1.22153,0.00192,1.02367,0.00459,0.0266
+P01 Daily Cleanser,P02 Hydrating Moisturiser,Skincare,True,2,155,0.01086,0.11787,1.2035,0.00184,1.02259,0.0071,0.03635
+P02 Hydrating Moisturiser,P01 Daily Cleanser,Skincare,True,2,155,0.01086,0.11087,1.2035,0.00184,1.02108,0.0071,0.03635

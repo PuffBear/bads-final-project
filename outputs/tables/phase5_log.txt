@@ -1,0 +1,105 @@
+
+### kpis
+                spend       revenue  conversions    ROAS      CPA    CTR    CVR     CPC      CPM       AOV  spend_share  revenue_share
+channel                                                                                                                               
+Email      3246847.40  1.062376e+08      80036.0  32.720   40.567  0.042  0.030   1.223   51.511  1327.373        0.069          0.309
+SMS        1712681.00  3.243582e+07      24008.0  18.939   71.338  0.042  0.026   1.865   79.092  1351.042        0.036          0.094
+Social    14417805.11  4.803273e+07      35397.0   3.331  407.317  0.042  0.021   8.677  365.496  1356.972        0.307          0.140
+Search    16855990.37  7.703959e+07      56725.0   4.570  297.153  0.043  0.045  13.364  568.526  1358.124        0.358          0.224
+Display    8263040.22  2.342627e+07      17275.0   2.835  478.324  0.042  0.011   5.253  220.019  1356.079        0.176          0.068
+WhatsApp   2534048.49  5.653523e+07      42334.0  22.310   59.858  0.043  0.039   2.347  101.230  1335.457        0.054          0.164
+
+### roas_by_year
+year       2024   2025   2026
+channel                      
+Email     32.12  32.55  33.41
+SMS       18.15  19.06  19.48
+Social     3.14   3.29   3.54
+Search     4.36   4.65   4.67
+Display    2.74   2.94   2.82
+WhatsApp  20.91  22.54  23.33
+
+### cpa_by_year
+year       2024   2025   2026
+channel                      
+Email      41.9   41.1   38.9
+SMS        73.8   72.1   68.6
+Social    430.5  414.0  382.2
+Search    309.9  295.7  288.2
+Display   490.3  460.5  487.6
+WhatsApp   62.6   59.5   57.9
+
+### growth_wk1_43
+      ad_spend_inr  attributed_revenue_inr  conversions
+year                                                   
+2024           NaN                     NaN          NaN
+2025          16.1                    20.2         18.9
+2026          13.4                    19.1         20.9
+
+### elasticities
+          beta_naive  beta_naive_se  beta_trend_season  beta_trend_season_se  r2_trend_season  beta_conversions_trend_season  beta_week_fe  beta_week_fe_se  ci_low  ci_high  p_beta_lt_1  avg_ROAS  marginal_ROAS  marginal_ROAS_low  \
+channel                                                                                                                                                                                                                                 
+Email          0.933          0.086              0.889                 0.154            0.446                          0.947         0.888            0.134   0.625    1.150        0.201    32.720         29.045             20.458   
+SMS            1.120          0.062              1.057                 0.107            0.647                          0.940         1.073            0.090   0.898    1.249        0.794    18.939         20.328             17.006   
+Social         0.964          0.120              0.732                 0.151            0.451                          0.838         0.890            0.137   0.621    1.159        0.211     3.331          2.965              2.069   
+Search         1.095          0.098              1.034                 0.120            0.549                          1.015         1.054            0.111   0.837    1.271        0.688     4.570          4.817              3.827   
+Display        1.168          0.111              1.175                 0.137            0.574                          1.184         1.094            0.115   0.868    1.320        0.793     2.835          3.102              2.461   
+WhatsApp       1.281          0.068              1.269                 0.125            0.611                          1.268         1.184            0.119   0.950    1.418        0.939    22.310         26.418             21.203   
+
+          marginal_ROAS_high  
+channel                       
+Email                 37.632  
+SMS                   23.651  
+Social                 3.860  
+Search                 5.807  
+Display                3.743  
+WhatsApp              31.633  
+
+### panel_r2
+0.8852
+
+### spend_variance_explained_by_week_effects
+0.0379
+
+### budget_scenarios
+                                              uplift_pct  spend_Email  spend_SMS  spend_Social  spend_Search  spend_Display  spend_WhatsApp
+as reported                             ±50%        26.6      38701.2    20555.1       56638.7      189681.0        31579.3         29474.2
+                                        ±20%        10.8      30960.9    16444.1       90621.9      154496.3        50526.8         23579.3
+owned channels' revenue credited at 50% ±50%        18.7      38701.2    20555.1       56638.7      189681.0        31579.3         29474.2
+                                        ±20%         7.6      30960.9    16444.1       90621.9      154496.3        50526.8         23579.3
+owned channels' revenue credited at 25% ±50%        11.7      38701.2    20555.1       56638.7      189681.0        31579.3         29474.2
+                                        ±20%         4.8      30960.9    16444.1       90621.9      154496.3        50526.8         23579.3
+
+### current_weekly_spend
+channel
+Email        25801.0
+SMS          13703.0
+Social      113277.0
+Search      131040.0
+Display      63159.0
+WhatsApp     19649.0
+Name: ad_spend_inr, dtype: float64
+
+### budget_moves_pct
+                                              Email   SMS  Social  Search  Display  WhatsApp
+as reported                             ±50%   50.0  50.0   -50.0    45.0    -50.0      50.0
+                                        ±20%   20.0  20.0   -20.0    18.0    -20.0      20.0
+owned channels' revenue credited at 50% ±50%   50.0  50.0   -50.0    45.0    -50.0      50.0
+                                        ±20%   20.0  20.0   -20.0    18.0    -20.0      20.0
+owned channels' revenue credited at 25% ±50%   50.0  50.0   -50.0    45.0    -50.0      50.0
+                                        ±20%   20.0  20.0   -20.0    18.0    -20.0      20.0
+
+### crosscheck
+          platform_CPA  customer_level_cost_per_order  platform_ROAS  customer_level_rev_per_contact_rupee  platform_CVR  customer_level_conv_rate
+channel                                                                                                                                           
+Email           40.567                          6.963         32.720                               176.657         0.030                     0.060
+SMS             71.338                         18.091         18.939                                72.546         0.026                     0.052
+Social         407.317                        159.562          3.331                                 7.962         0.021                     0.049
+Search         297.153                        258.264          4.570                                 5.116         0.045                     0.051
+Display        478.324                         67.573          2.835                                18.049         0.011                     0.059
+WhatsApp        59.858                         21.773         22.310                                54.222         0.039                     0.063
+
+### crosscheck_rank_corr
+CPA vs cost/order                0.714
+ROAS vs revenue/contact-rupee    0.714
+dtype: float64

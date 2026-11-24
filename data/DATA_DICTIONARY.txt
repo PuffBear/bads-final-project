@@ -1,0 +1,36 @@
+DATA DICTIONARY AND LINK KEYS
+
+customers.csv
+customer_id, signup_date, age, gender, region, city, annual_income_band_inr, preferred_category, orders_before_2026, spend_before_2026_inr, days_since_last_order_at_2025_12_31, website_visits_dec_2025, email_engagement_dec_2025, marketing_consent
+
+campaign_catalog.csv
+campaign_id, campaign_name, channel, featured_category, start_date, end_date, discount_pct, campaign_objective
+
+campaign_exposures.csv
+exposure_id, customer_id, campaign_id, exposure_date, channel, delivered, opened, clicked, contact_cost_inr, purchased_within_14_days
+
+orders.csv
+order_id, customer_id, order_date, attributed_exposure_id, gross_merchandise_value_inr, discount_inr, shipping_fee_inr, order_total_inr, payment_mode
+
+order_items.csv
+order_item_id, order_id, product_id, quantity, unit_price_inr, line_gross_value_inr
+
+product_catalog.csv
+product_id, product_name, category, list_price_inr
+
+weekly_channel_performance.csv
+week_start_date, channel, ad_spend_inr, impressions, clicks, conversions, attributed_revenue_inr
+
+brand_perception_survey.csv
+respondent_id, customer_id, brand, perceived_quality_1_to_5, perceived_affordability_1_to_5, perceived_innovation_1_to_5, perceived_naturalness_1_to_5, perceived_trendiness_1_to_5
+
+RELATIONSHIPS
+customers.customer_id = campaign_exposures.customer_id = orders.customer_id = brand_perception_survey.customer_id
+campaign_catalog.campaign_id = campaign_exposures.campaign_id
+orders.attributed_exposure_id = campaign_exposures.exposure_id (when nonblank)
+orders.order_id = order_items.order_id
+product_catalog.product_id = order_items.product_id
+weekly_channel_performance.channel = campaign_catalog.channel (channel labels only; aggregates are separate)
+
+KEY INTERPRETATION
+purchased_within_14_days = 1 if exposure is associated with a purchase during the subsequent 14 days; otherwise 0. Pre-2026 behaviour fields are fixed before the campaign start. Delivered, opened, clicked are observed campaign-event fields rather than pre-contact customer attributes.

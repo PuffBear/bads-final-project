@@ -1,0 +1,14 @@
+question,test,stat,p_value,n,effect
+2025 order value differs by segment,Kruskal-Wallis,5.581503266007392,0.2326576280608588,11005,
+cod share differs by segment,chi-square,1.5753502850473096,0.8132154731653145,14274,Cramer's V 0.011
+has_bundle share differs by segment,chi-square,1.57261215018557,0.8137059388844465,14274,Cramer's V 0.010
+paid_shipping share differs by segment,chi-square,8.875251017887257,0.06429438152166478,14274,Cramer's V 0.025
+order value differs by region,Kruskal-Wallis,1.4667613130565904,0.832512520052548,14274,
+COD share differs by region,chi-square,9.672142012205589,0.04632779339866568,14274,Cramer's V 0.026
+order value differs by city,Kruskal-Wallis,21.76574960558748,0.29606920985313406,14274,
+COD share differs by city,chi-square,22.840711204419108,0.24443067067378757,14274,Cramer's V 0.040
+main basket category differs by region,chi-square,14.054526935718458,0.29723984704824985,14274,Cramer's V 0.018
+orders evenly spread over weekdays,chi-square GOF,,0.06119499292385979,14274,
+campaign GMV vs same customers' organic GMV (2026),Wilcoxon signed-rank,23141.5,0.9013850900286202,312,
+discount % predicts log GMV of campaign orders,OLS HC1,0.30256683323453093,0.7622199935847377,1169,
+orders just above Rs 999 over-represented vs random baskets,permutation (300),0.7906614785992216,0.6033,13105,

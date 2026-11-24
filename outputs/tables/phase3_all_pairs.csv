@@ -1,0 +1,154 @@
+a,b,cat_a,cat_b,together,expected,lift,p_value,q_value,within_category,direction
+P12 Body Wash,P13 Lip Balm,Bodycare,Bodycare,318,195.81757,1.62396,0.0,0.0,True,positive
+P07 Gentle Shampoo,P10 Scalp Scrub,Haircare,Haircare,218,146.3409,1.48967,0.0,0.0,True,positive
+P11 Body Lotion,P12 Body Wash,Bodycare,Bodycare,297,200.80202,1.47907,0.0,0.0,True,positive
+P07 Gentle Shampoo,P09 Hair Growth Serum,Haircare,Haircare,214,146.83866,1.45738,0.0,0.0,True,positive
+P08 Repair Conditioner,P10 Scalp Scrub,Haircare,Haircare,216,149.43043,1.44549,0.0,0.0,True,positive
+P15 Travel Skincare Kit,P17 Glow Essentials Kit,Bundles,Bundles,75,51.89253,1.44529,0.00111,0.00142,True,positive
+P07 Gentle Shampoo,P08 Repair Conditioner,Haircare,Haircare,208,144.44942,1.43995,0.0,0.0,True,positive
+P11 Body Lotion,P13 Lip Balm,Bodycare,Bodycare,277,195.58638,1.41625,0.0,0.0,True,positive
+P15 Travel Skincare Kit,P18 Bodycare Combo,Bundles,Bundles,68,50.42441,1.34855,0.01078,0.01278,True,positive
+P09 Hair Growth Serum,P10 Scalp Scrub,Haircare,Haircare,201,151.90206,1.32322,2e-05,3e-05,True,positive
+P15 Travel Skincare Kit,P16 Haircare Duo,Bundles,Bundles,66,50.59381,1.30451,0.02474,0.02803,True,positive
+P17 Glow Essentials Kit,P18 Bodycare Combo,Bundles,Bundles,75,57.49383,1.30449,0.01651,0.01928,True,positive
+P16 Haircare Duo,P18 Bodycare Combo,Bundles,Bundles,70,56.05493,1.24878,0.05395,0.05939,True,n.s.
+P16 Haircare Duo,P17 Glow Essentials Kit,Bundles,Bundles,72,57.68698,1.24812,0.04876,0.05446,True,n.s.
+P08 Repair Conditioner,P09 Hair Growth Serum,Haircare,Haircare,185,149.9387,1.23384,0.00195,0.00244,True,positive
+P06 Night Repair Cream,P14 Face Mask,Skincare,Skincare,146,118.48424,1.23223,0.00633,0.00763,True,positive
+P04 Vitamin C Serum,P14 Face Mask,Skincare,Skincare,151,123.6158,1.22153,0.0085,0.01016,True,positive
+P01 Daily Cleanser,P02 Hydrating Moisturiser,Skincare,Skincare,155,128.79151,1.2035,0.01293,0.01522,True,positive
+P03 SPF 50 Sunscreen,P14 Face Mask,Skincare,Skincare,135,112.25305,1.20264,0.02252,0.02572,True,positive
+P04 Vitamin C Serum,P06 Night Repair Cream,Skincare,Skincare,146,122.19819,1.19478,0.01914,0.02202,True,positive
+P01 Daily Cleanser,P14 Face Mask,Skincare,Skincare,142,120.50021,1.17842,0.03499,0.03937,True,positive
+P03 SPF 50 Sunscreen,P06 Night Repair Cream,Skincare,Skincare,130,110.96574,1.17153,0.05386,0.05939,True,n.s.
+P02 Hydrating Moisturiser,P03 SPF 50 Sunscreen,Skincare,Skincare,139,119.97688,1.15856,0.06268,0.0685,True,n.s.
+P02 Hydrating Moisturiser,P06 Night Repair Cream,Skincare,Skincare,145,126.63682,1.14501,0.07721,0.08378,True,n.s.
+P01 Daily Cleanser,P06 Night Repair Cream,Skincare,Skincare,136,119.11833,1.14172,0.09592,0.10335,True,n.s.
+P03 SPF 50 Sunscreen,P05 Niacinamide Serum,Skincare,Skincare,120,108.47695,1.10623,0.22639,0.24222,True,n.s.
+P03 SPF 50 Sunscreen,P04 Vitamin C Serum,Skincare,Skincare,125,115.77168,1.07971,0.3577,0.38006,True,n.s.
+P01 Daily Cleanser,P04 Vitamin C Serum,Skincare,Skincare,133,124.27736,1.07019,0.40021,0.42229,True,n.s.
+P01 Daily Cleanser,P05 Niacinamide Serum,Skincare,Skincare,124,116.44669,1.06486,0.44474,0.46606,True,n.s.
+P02 Hydrating Moisturiser,P14 Face Mask,Skincare,Skincare,135,128.10593,1.05382,0.49455,0.51125,True,n.s.
+P02 Hydrating Moisturiser,P05 Niacinamide Serum,Skincare,Skincare,130,123.79655,1.05011,0.5519,0.56672,True,n.s.
+P05 Niacinamide Serum,P06 Night Repair Cream,Skincare,Skincare,116,114.49853,1.01311,0.87761,0.89516,True,n.s.
+P05 Niacinamide Serum,P14 Face Mask,Skincare,Skincare,116,115.82682,1.0015,0.95932,0.97202,True,n.s.
+P01 Daily Cleanser,P03 SPF 50 Sunscreen,Skincare,Skincare,113,112.85379,1.0013,1.0,1.0,True,n.s.
+P02 Hydrating Moisturiser,P04 Vitamin C Serum,Skincare,Skincare,132,132.12148,0.99908,1.0,1.0,True,n.s.
+P04 Vitamin C Serum,P05 Niacinamide Serum,Skincare,Skincare,112,119.45748,0.93757,0.48089,0.50052,True,n.s.
+P07 Gentle Shampoo,P15 Travel Skincare Kit,Haircare,Bundles,61,80.23862,0.76023,0.01815,0.02104,False,negative
+P08 Repair Conditioner,P18 Bodycare Combo,Haircare,Bundles,67,90.77645,0.73808,0.00596,0.00724,False,negative
+P10 Scalp Scrub,P16 Haircare Duo,Haircare,Bundles,67,92.27406,0.7261,0.00372,0.00459,False,negative
+P11 Body Lotion,P15 Travel Skincare Kit,Bodycare,Bundles,69,95.54098,0.7222,0.00241,0.003,False,negative
+P05 Niacinamide Serum,P18 Bodycare Combo,Skincare,Bundles,56,79.07748,0.70817,0.00418,0.00512,False,negative
+P03 SPF 50 Sunscreen,P17 Glow Essentials Kit,Skincare,Bundles,53,78.86892,0.672,0.00122,0.00154,False,negative
+P13 Lip Balm,P18 Bodycare Combo,Bodycare,Bundles,69,103.22615,0.66844,0.00012,0.00016,False,negative
+P12 Body Wash,P16 Haircare Duo,Bodycare,Bundles,70,106.33487,0.6583,6e-05,8e-05,False,negative
+P07 Gentle Shampoo,P17 Glow Essentials Kit,Haircare,Bundles,59,91.48795,0.64489,0.00013,0.00017,False,negative
+P08 Repair Conditioner,P17 Glow Essentials Kit,Haircare,Bundles,60,93.41943,0.64226,9e-05,0.00013,False,negative
+P11 Body Lotion,P16 Haircare Duo,Bodycare,Bundles,68,106.20933,0.64025,2e-05,3e-05,False,negative
+P01 Daily Cleanser,P16 Haircare Duo,Skincare,Bundles,52,82.54449,0.62996,0.00016,0.00021,False,negative
+P05 Niacinamide Serum,P17 Glow Essentials Kit,Skincare,Bundles,51,81.37985,0.62669,0.00015,0.00019,False,negative
+P01 Daily Cleanser,P17 Glow Essentials Kit,Skincare,Bundles,53,84.66337,0.62601,0.0001,0.00013,False,negative
+P12 Body Wash,P18 Bodycare Combo,Bodycare,Bundles,66,105.97884,0.62277,1e-05,1e-05,False,negative
+P13 Lip Balm,P17 Glow Essentials Kit,Bodycare,Bundles,66,106.23161,0.62128,1e-05,1e-05,False,negative
+P01 Daily Cleanser,P18 Bodycare Combo,Skincare,Bundles,51,82.26811,0.61992,0.0001,0.00013,False,negative
+P12 Body Wash,P17 Glow Essentials Kit,Bodycare,Bundles,67,109.06445,0.61432,0.0,1e-05,False,negative
+P11 Body Lotion,P18 Bodycare Combo,Bodycare,Bundles,65,105.85372,0.61405,1e-05,1e-05,False,negative
+P13 Lip Balm,P15 Travel Skincare Kit,Bodycare,Bundles,57,93.1694,0.61179,2e-05,3e-05,False,negative
+P02 Hydrating Moisturiser,P17 Glow Essentials Kit,Skincare,Bundles,54,90.00715,0.59995,2e-05,2e-05,False,negative
+P12 Body Wash,P15 Travel Skincare Kit,Bodycare,Bundles,57,95.65392,0.5959,1e-05,1e-05,False,negative
+P07 Gentle Shampoo,P16 Haircare Duo,Haircare,Bundles,53,89.19826,0.59418,1e-05,2e-05,False,negative
+P14 Face Mask,P17 Glow Essentials Kit,Skincare,Bundles,50,84.21269,0.59373,2e-05,3e-05,False,negative
+P10 Scalp Scrub,P15 Travel Skincare Kit,Haircare,Bundles,48,83.00546,0.57828,1e-05,2e-05,False,negative
+P09 Hair Growth Serum,P18 Bodycare Combo,Haircare,Bundles,53,92.27792,0.57435,0.0,0.0,False,negative
+P07 Gentle Shampoo,P18 Bodycare Combo,Haircare,Bundles,51,88.89961,0.57368,0.0,1e-05,False,negative
+P08 Repair Conditioner,P15 Travel Skincare Kit,Haircare,Bundles,47,81.9326,0.57364,1e-05,2e-05,False,negative
+P10 Scalp Scrub,P17 Glow Essentials Kit,Haircare,Bundles,54,94.64271,0.57057,0.0,0.0,False,negative
+P11 Body Lotion,P17 Glow Essentials Kit,Bodycare,Bundles,62,108.93569,0.56914,0.0,0.0,False,negative
+P09 Hair Growth Serum,P16 Haircare Duo,Haircare,Bundles,52,92.58792,0.56163,0.0,0.0,False,negative
+P07 Gentle Shampoo,P11 Body Lotion,Haircare,Bodycare,94,168.44136,0.55806,0.0,0.0,False,negative
+P02 Hydrating Moisturiser,P16 Haircare Duo,Skincare,Bundles,48,87.75452,0.54698,0.0,0.0,False,negative
+P04 Vitamin C Serum,P16 Haircare Duo,Skincare,Bundles,46,84.67872,0.54323,0.0,0.0,False,negative
+P04 Vitamin C Serum,P17 Glow Essentials Kit,Skincare,Bundles,47,86.85239,0.54115,0.0,0.0,False,negative
+P06 Night Repair Cream,P16 Haircare Duo,Skincare,Bundles,43,81.16351,0.52979,0.0,0.0,False,negative
+P06 Night Repair Cream,P17 Glow Essentials Kit,Skincare,Bundles,44,83.24695,0.52855,0.0,0.0,False,negative
+P09 Hair Growth Serum,P17 Glow Essentials Kit,Haircare,Bundles,50,94.96462,0.52651,0.0,0.0,False,negative
+P04 Vitamin C Serum,P15 Travel Skincare Kit,Skincare,Bundles,40,76.17304,0.52512,0.0,0.0,False,negative
+P14 Face Mask,P16 Haircare Duo,Skincare,Bundles,43,82.10509,0.52372,0.0,0.0,False,negative
+P09 Hair Growth Serum,P13 Lip Balm,Haircare,Bodycare,89,170.50231,0.52199,0.0,0.0,False,negative
+P06 Night Repair Cream,P12 Body Wash,Skincare,Bodycare,80,153.44977,0.52134,0.0,0.0,False,negative
+P06 Night Repair Cream,P18 Bodycare Combo,Skincare,Bundles,42,80.89176,0.51921,0.0,0.0,False,negative
+P08 Repair Conditioner,P13 Lip Balm,Haircare,Bodycare,87,167.72804,0.5187,0.0,0.0,False,negative
+P05 Niacinamide Serum,P15 Travel Skincare Kit,Skincare,Bundles,37,71.37341,0.5184,0.0,0.0,False,negative
+P09 Hair Growth Serum,P11 Body Lotion,Haircare,Bodycare,90,174.84237,0.51475,0.0,0.0,False,negative
+P14 Face Mask,P15 Travel Skincare Kit,Skincare,Bundles,38,73.85792,0.5145,0.0,0.0,False,negative
+P10 Scalp Scrub,P18 Bodycare Combo,Haircare,Bundles,47,91.96511,0.51106,0.0,0.0,False,negative
+P03 SPF 50 Sunscreen,P18 Bodycare Combo,Skincare,Bundles,39,76.63759,0.50889,0.0,0.0,False,negative
+P02 Hydrating Moisturiser,P15 Travel Skincare Kit,Skincare,Bundles,40,78.93989,0.50671,0.0,0.0,False,negative
+P08 Repair Conditioner,P11 Body Lotion,Haircare,Bodycare,87,171.99748,0.50582,0.0,0.0,False,negative
+P08 Repair Conditioner,P16 Haircare Duo,Haircare,Bundles,46,91.08141,0.50504,0.0,0.0,False,negative
+P09 Hair Growth Serum,P15 Travel Skincare Kit,Haircare,Bundles,42,83.2878,0.50428,0.0,0.0,False,negative
+P05 Niacinamide Serum,P16 Haircare Duo,Skincare,Bundles,40,79.34314,0.50414,0.0,0.0,False,negative
+P14 Face Mask,P18 Bodycare Combo,Skincare,Bundles,41,81.83018,0.50104,0.0,0.0,False,negative
+P08 Repair Conditioner,P12 Body Wash,Haircare,Bodycare,85,172.20078,0.49361,0.0,0.0,False,negative
+P13 Lip Balm,P16 Haircare Duo,Bodycare,Bundles,50,103.57293,0.48275,0.0,0.0,False,negative
+P05 Niacinamide Serum,P07 Gentle Shampoo,Skincare,Haircare,60,125.83326,0.47682,0.0,0.0,False,negative
+P02 Hydrating Moisturiser,P11 Body Lotion,Skincare,Bodycare,77,165.71501,0.46465,0.0,0.0,False,negative
+P02 Hydrating Moisturiser,P13 Lip Balm,Skincare,Bodycare,75,161.60151,0.4641,0.0,0.0,False,negative
+P09 Hair Growth Serum,P12 Body Wash,Haircare,Bodycare,81,175.04904,0.46273,0.0,0.0,False,negative
+P03 SPF 50 Sunscreen,P11 Body Lotion,Skincare,Bodycare,67,145.20807,0.46141,0.0,0.0,False,negative
+P05 Niacinamide Serum,P09 Hair Growth Serum,Skincare,Haircare,60,130.6151,0.45936,0.0,0.0,False,negative
+P10 Scalp Scrub,P11 Body Lotion,Haircare,Bodycare,80,174.24968,0.45911,0.0,0.0,False,negative
+P02 Hydrating Moisturiser,P12 Body Wash,Skincare,Bodycare,76,165.91089,0.45808,0.0,0.0,False,negative
+P06 Night Repair Cream,P08 Repair Conditioner,Skincare,Haircare,60,131.43779,0.45649,0.0,0.0,False,negative
+P05 Niacinamide Serum,P11 Body Lotion,Skincare,Bodycare,68,149.83102,0.45384,0.0,0.0,False,negative
+P02 Hydrating Moisturiser,P09 Hair Growth Serum,Skincare,Haircare,65,144.46196,0.44995,0.0,0.0,False,negative
+P02 Hydrating Moisturiser,P18 Bodycare Combo,Skincare,Bundles,39,87.4607,0.44591,0.0,0.0,False,negative
+P07 Gentle Shampoo,P13 Lip Balm,Haircare,Bodycare,73,164.26019,0.44442,0.0,0.0,False,negative
+P07 Gentle Shampoo,P12 Body Wash,Haircare,Bodycare,74,168.64047,0.4388,0.0,0.0,False,negative
+P13 Lip Balm,P14 Face Mask,Bodycare,Skincare,66,151.19798,0.43651,0.0,0.0,False,negative
+P10 Scalp Scrub,P13 Lip Balm,Haircare,Bodycare,74,169.92434,0.43549,0.0,0.0,False,negative
+P05 Niacinamide Serum,P12 Body Wash,Skincare,Bodycare,65,150.00813,0.43331,0.0,0.0,False,negative
+P04 Vitamin C Serum,P10 Scalp Scrub,Skincare,Haircare,60,138.92602,0.43188,0.0,0.0,False,negative
+P01 Daily Cleanser,P15 Travel Skincare Kit,Skincare,Bundles,32,74.25319,0.43096,0.0,0.0,False,negative
+P10 Scalp Scrub,P12 Body Wash,Haircare,Bodycare,74,174.45565,0.42418,0.0,0.0,False,negative
+P09 Hair Growth Serum,P14 Face Mask,Haircare,Skincare,57,135.16183,0.42172,0.0,0.0,False,negative
+P06 Night Repair Cream,P13 Lip Balm,Skincare,Bodycare,63,149.46406,0.42151,0.0,0.0,False,negative
+P05 Niacinamide Serum,P13 Lip Balm,Skincare,Bodycare,61,146.11181,0.41749,0.0,0.0,False,negative
+P01 Daily Cleanser,P12 Body Wash,Skincare,Bodycare,65,156.06067,0.4165,0.0,0.0,False,negative
+P04 Vitamin C Serum,P11 Body Lotion,Skincare,Bodycare,66,159.90668,0.41274,0.0,0.0,False,negative
+P01 Daily Cleanser,P11 Body Lotion,Skincare,Bodycare,63,155.87642,0.40417,0.0,0.0,False,negative
+P04 Vitamin C Serum,P13 Lip Balm,Skincare,Bodycare,63,155.93737,0.40401,0.0,0.0,False,negative
+P04 Vitamin C Serum,P18 Bodycare Combo,Skincare,Bundles,34,84.39519,0.40287,0.0,0.0,False,negative
+P04 Vitamin C Serum,P12 Body Wash,Skincare,Bodycare,64,160.0957,0.39976,0.0,0.0,False,negative
+P12 Body Wash,P14 Face Mask,Bodycare,Skincare,62,155.22993,0.39941,0.0,0.0,False,negative
+P06 Night Repair Cream,P11 Body Lotion,Skincare,Bodycare,61,153.2686,0.39799,0.0,0.0,False,negative
+P01 Daily Cleanser,P10 Scalp Scrub,Skincare,Haircare,53,135.42455,0.39136,0.0,0.0,False,negative
+P03 SPF 50 Sunscreen,P16 Haircare Duo,Skincare,Bundles,30,76.89505,0.39014,0.0,0.0,False,negative
+P01 Daily Cleanser,P07 Gentle Shampoo,Skincare,Haircare,51,130.9104,0.38958,0.0,0.0,False,negative
+P06 Night Repair Cream,P09 Hair Growth Serum,Skincare,Haircare,51,133.61181,0.3817,0.0,0.0,False,negative
+P03 SPF 50 Sunscreen,P08 Repair Conditioner,Skincare,Haircare,47,124.52536,0.37743,0.0,0.0,False,negative
+P03 SPF 50 Sunscreen,P07 Gentle Shampoo,Skincare,Haircare,46,121.95075,0.3772,0.0,0.0,False,negative
+P01 Daily Cleanser,P08 Repair Conditioner,Skincare,Haircare,50,133.67416,0.37404,0.0,0.0,False,negative
+P04 Vitamin C Serum,P07 Gentle Shampoo,Skincare,Haircare,50,134.29515,0.37231,0.0,0.0,False,negative
+P06 Night Repair Cream,P15 Travel Skincare Kit,Skincare,Bundles,27,73.01093,0.36981,0.0,0.0,False,negative
+P10 Scalp Scrub,P14 Face Mask,Haircare,Skincare,49,134.70366,0.36376,0.0,0.0,False,negative
+P01 Daily Cleanser,P13 Lip Balm,Skincare,Bodycare,55,152.00715,0.36183,0.0,0.0,False,negative
+P03 SPF 50 Sunscreen,P13 Lip Balm,Skincare,Bodycare,51,141.60361,0.36016,0.0,0.0,False,negative
+P02 Hydrating Moisturiser,P08 Repair Conditioner,Skincare,Haircare,51,142.11139,0.35887,0.0,0.0,False,negative
+P03 SPF 50 Sunscreen,P12 Body Wash,Skincare,Bodycare,52,145.37971,0.35768,0.0,0.0,False,negative
+P03 SPF 50 Sunscreen,P09 Hair Growth Serum,Skincare,Haircare,45,126.58505,0.35549,0.0,0.0,False,negative
+P02 Hydrating Moisturiser,P10 Scalp Scrub,Skincare,Haircare,51,143.97226,0.35423,0.0,0.0,False,negative
+P04 Vitamin C Serum,P09 Hair Growth Serum,Skincare,Haircare,49,139.39856,0.35151,0.0,0.0,False,negative
+P04 Vitamin C Serum,P08 Repair Conditioner,Skincare,Haircare,48,137.13038,0.35003,0.0,0.0,False,negative
+P03 SPF 50 Sunscreen,P15 Travel Skincare Kit,Skincare,Bundles,24,69.17122,0.34697,0.0,0.0,False,negative
+P01 Daily Cleanser,P09 Hair Growth Serum,Skincare,Haircare,46,135.88518,0.33852,0.0,0.0,False,negative
+P05 Niacinamide Serum,P10 Scalp Scrub,Skincare,Haircare,43,130.17234,0.33033,0.0,0.0,False,negative
+P07 Gentle Shampoo,P14 Face Mask,Haircare,Skincare,43,130.21354,0.33023,0.0,0.0,False,negative
+P03 SPF 50 Sunscreen,P10 Scalp Scrub,Skincare,Haircare,41,126.15595,0.32499,0.0,0.0,False,negative
+P02 Hydrating Moisturiser,P07 Gentle Shampoo,Skincare,Haircare,45,139.17318,0.32334,0.0,0.0,False,negative
+P06 Night Repair Cream,P07 Gentle Shampoo,Skincare,Haircare,41,128.72026,0.31852,0.0,0.0,False,negative
+P08 Repair Conditioner,P14 Face Mask,Haircare,Skincare,42,132.96259,0.31588,0.0,0.0,False,negative
+P05 Niacinamide Serum,P08 Repair Conditioner,Skincare,Haircare,40,128.48984,0.31131,0.0,0.0,False,negative
+P11 Body Lotion,P14 Face Mask,Bodycare,Skincare,47,155.04666,0.30313,0.0,0.0,False,negative
+P06 Night Repair Cream,P10 Scalp Scrub,Skincare,Haircare,40,133.15889,0.30039,0.0,0.0,False,negative

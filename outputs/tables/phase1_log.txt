@@ -1,0 +1,101 @@
+ k    inertia  silhouette  silhouette_null  silhouette_null_sd  calinski_harabasz  davies_bouldin    gap  gap_se  stability_ari  stability_ari_min  smallest_cluster_share  pseudo_r2_2026  cv_logloss_gain_2026  min_cluster_jaccard  silhouette_lift_vs_null  silhouette_z_vs_null  inertia_drop_pct  gap_rule_ok
+ 2 18807.0186      0.2700           0.2005              0.0018          1910.9220          1.5385 1.1364  0.0050         0.9843             0.9719                  0.3679          0.0205                0.0203               0.9743                   0.0695               37.6303               NaN         True
+ 3 16227.5935      0.2418           0.1742              0.0008          1516.6700          1.5614 1.0893  0.0070         0.9683             0.8689                  0.2011          0.0251                0.0247               0.8419                   0.0676               81.3389           13.7152         True
+ 4 14081.9239      0.2102           0.1796              0.0014          1426.6166          1.5448 1.0760  0.0071         0.9631             0.9424                  0.1903          0.0255                0.0245               0.9261                   0.0306               21.2633           13.2224         True
+ 5 12762.7347      0.1949           0.1851              0.0018          1313.4345          1.4822 1.0793  0.0065         0.9328             0.8662                  0.1057          0.0254                0.0239               0.9138                   0.0098                5.5887            9.3680         True
+ 6 11830.0068      0.1826           0.1883              0.0025          1214.5833          1.4823 1.0658  0.0058         0.9390             0.7207                  0.0716          0.0304                0.0293               0.6689                  -0.0056               -2.2829            7.3082         True
+ 7 11066.4272      0.1809           0.1823              0.0024          1140.9985          1.4594 1.0619  0.0057         0.7788             0.5134                  0.0689          0.0293                0.0277               0.6433                  -0.0014               -0.6009            6.4546         True
+ 8 10537.6137      0.1670           0.1690              0.0030          1063.7814          1.5250 1.0431  0.0054         0.7369             0.4311                  0.0727          0.0278                0.0261               0.4595                  -0.0020               -0.6538            4.7785        False
+ 9 10065.5043      0.1686           0.1601              0.0033          1004.4715          1.5017 1.0496  0.0045         0.7356             0.4031                  0.0733          0.0284                0.0266               0.4054                   0.0085                2.6048            4.4802        False
+ k  silhouette  silhouette_null  silhouette_lift_vs_null  silhouette_z_vs_null  min_cluster_jaccard  smallest_cluster_share  cv_logloss_gain_2026  passes_rule
+ 2      0.2700           0.2005                   0.0695               37.6303               0.9743                  0.3679                0.0203         True
+ 3      0.2418           0.1742                   0.0676               81.3389               0.8419                  0.2011                0.0247        False
+ 4      0.2102           0.1796                   0.0306               21.2633               0.9261                  0.1903                0.0245         True
+ 5      0.1949           0.1851                   0.0098                5.5887               0.9138                  0.1057                0.0239         True
+ 6      0.1826           0.1883                  -0.0056               -2.2829               0.6689                  0.0716                0.0293        False
+ 7      0.1809           0.1823                  -0.0014               -0.6009               0.6433                  0.0689                0.0277        False
+ 8      0.1670           0.1690                  -0.0020               -0.6538               0.4595                  0.0727                0.0261        False
+ 9      0.1686           0.1601                   0.0085                2.6048               0.4054                  0.0733                0.0266        False
+chosen K = 4
+ k  cluster    n  mean_silhouette  share_negative
+ 3        0 2794            0.290           0.000
+ 3        1 1325            0.152           0.090
+ 3        2 1037            0.227           0.031
+ 4        0  981            0.222           0.056
+ 4        1 2130            0.259           0.000
+ 4        2 1035            0.147           0.148
+ 4        3 1010            0.161           0.113
+ 5        0  833            0.142           0.173
+ 5        1  545            0.095           0.281
+ 5        2 1624            0.266           0.000
+ 5        3  826            0.265           0.022
+ 5        4 1328            0.139           0.114
+ 6        0  369            0.191           0.073
+ 6        1 1156            0.246           0.000
+ 6        2  744            0.218           0.050
+ 6        3 1299            0.176           0.000
+ 6        4  772            0.140           0.199
+ 6        5  816            0.108           0.219
+k4 x k5
+ col_0    0    1     2    3    4
+row_0                          
+0        0  204     0  748   29
+1        1    0  1485   57  587
+2       17  341     0    0  677
+3      815    0   139   21   35
+k6 x k5
+ col_0    0    1     2    3    4
+row_0                          
+0        0  261     0  108    0
+1       29    0  1079    0   48
+2        8    1     5  708   22
+3       34    0   523    9  733
+4      751    0    16    0    5
+5       11  283     1    1  520
+k3 x k4
+ col_0    0     1     2    3
+row_0                      
+0        3  1876     0  915
+1       13   230  1033   49
+2      965    24     2   46
+segment              Recent actives  Lapsing regulars  Low-basket buyers  Occasional buyers  Registered, never purchased
+customers                   981.000          1035.000           1010.000           2130.000                      844.000
+share_customers               0.164             0.172              0.168              0.355                        0.141
+share_pre2026_spend           0.318             0.285              0.086              0.312                        0.000
+median_recency_days           2.000            96.000             83.000             96.000                      125.000
+mean_orders                   4.096             3.308              1.902              1.735                        0.000
+median_aov                  936.733           966.590            557.922            958.087                        0.000
+mean_spend                 3820.429          3240.748            998.696           1725.350                        0.000
+mean_visits_dec               9.582            11.421              7.052              6.856                        6.468
+mean_email_eng_dec            5.761             7.548              3.251              3.062                        2.501
+mean_RFM_total               12.906             9.557              6.209              6.818                          NaN
+median_tenure_days          397.000           378.000            366.500            374.500                      379.000
+mean_age                     32.539            32.192             32.450             32.207                       31.959
+female_share                  0.562             0.586              0.583              0.604                        0.591
+consent_rate                  0.810             0.809              0.801              0.820                        0.802
+mean_silhouette               0.222             0.147              0.161              0.259                          NaN
+survey_respondents          120.000           124.000            131.000            275.000                      110.000
+exposures                  3503.000          3552.000           3560.000           7532.000                     2853.000
+conv_rate                     0.114             0.064              0.046              0.041                        0.022
+rev_per_exposure            140.316            83.649             63.153             52.234                       30.611
+cost_per_exposure             3.999             4.216              3.997              4.059                        4.183
+revenue_share_2026            0.329             0.199              0.150              0.263                        0.058
+conv_cat_match                0.158             0.094              0.068              0.062                        0.032
+conv_no_match                 0.097             0.053              0.038              0.033                        0.019
+                      variable           test     stat  dof  p_value           effect
+                        gender     chi-square  10.0664    8   0.2604 Cramer's V 0.029
+                        region     chi-square  22.3116   16   0.1334 Cramer's V 0.030
+                          city     chi-square  74.4292   76   0.5295 Cramer's V 0.056
+        annual_income_band_inr     chi-square  11.9542   16   0.7471 Cramer's V 0.022
+            preferred_category     chi-square   8.5734   12   0.7389 Cramer's V 0.022
+                           age Kruskal-Wallis   2.1993    4   0.6992                 
+             marketing_consent     chi-square   2.1803    4   0.7026 Cramer's V 0.019
+2026 purchase (exposure level)     chi-square 328.8908    4   0.0000 Cramer's V 0.125
+                                                                 check  value
+                     share of 'Recent actives' at the recency = 2 heap  0.760
+ARI: refit excluding recency=2 heap, heap assigned to nearest centroid  0.381
+                                     ARI: log spend instead of log AOV  0.318
+                              ARI: RFM-only features (drop engagement)  0.588
+                       ARI: Gaussian mixture (full covariance), same k  0.628
+                                               GMM BIC-optimal k (2-9)  9.000
+GMM BIC by k: {2: 67891, 3: 58124, 4: 57864, 5: 23847, 6: 10609, 7: 8956, 8: 8706, 9: 8481}

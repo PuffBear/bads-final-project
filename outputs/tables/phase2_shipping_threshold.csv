@@ -1,0 +1,15 @@
+,,0
+bunching,obs_share_999_1199,0.0775
+bunching,sim_share_999_1199,0.0779
+bunching,obs_share_799_999,0.0981
+bunching,sim_share_799_999,0.0974
+bunching,ratio_above_below_obs,0.7907
+bunching,ratio_above_below_sim_mean,0.7998
+bunching,ratio_sim_p95,0.8543
+bunching,perm_p_value,0.6033
+stats,orders_paying_shipping,5754.0
+stats,share_of_orders,0.403
+stats,shipping_revenue_sample,281946.0
+stats,share_within_250_of_threshold,0.307
+stats,share_single_product,0.886
+stats,median_net_value,649.0

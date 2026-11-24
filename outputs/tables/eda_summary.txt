@@ -1,0 +1,378 @@
+
+### customers_numeric
+                                      count    mean     std   min    25%     50%     75%      max  skew  iqr_outliers
+age                                  6000.0    32.3     9.2  18.0   25.0    32.0    39.0     64.0   0.3            12
+orders_before_2026                   6000.0     2.2     1.6   0.0    1.0     2.0     3.0     10.0   0.9            91
+spend_before_2026_inr                6000.0  1964.3  1687.6   0.0  776.6  1589.8  2800.5  12232.4   1.3           189
+days_since_last_order_at_2025_12_31  6000.0   110.8   110.6   2.0   30.0    78.0   159.0    730.0   1.7           232
+website_visits_dec_2025              6000.0     8.1     3.4   0.0    6.0     8.0    10.0     27.0   0.7           109
+email_engagement_dec_2025            6000.0     4.2     3.0   0.0    2.0     4.0     6.0     22.0   1.2           100
+
+### consent_rate
+0.8106666666666666
+
+### corr
+                                      age  orders_before_2026  spend_before_2026_inr  days_since_last_order_at_2025_12_31  website_visits_dec_2025  email_engagement_dec_2025  marketing_consent
+age                                  1.00                0.01                   0.00                                -0.01                     0.01                       0.01              -0.04
+orders_before_2026                   0.01                1.00                   0.93                                -0.39                     0.35                       0.45               0.01
+spend_before_2026_inr                0.00                0.93                   1.00                                -0.37                     0.35                       0.45               0.01
+days_since_last_order_at_2025_12_31 -0.01               -0.39                  -0.37                                 1.00                    -0.13                      -0.18               0.01
+website_visits_dec_2025              0.01                0.35                   0.35                                -0.13                     1.00                       0.34               0.01
+email_engagement_dec_2025            0.01                0.45                   0.45                                -0.18                     0.34                       1.00              -0.00
+marketing_consent                   -0.04                0.01                   0.01                                 0.01                     0.01                      -0.00               1.00
+
+### spend_by_income
+                        median    mean
+annual_income_band_inr                
+Under 4L                1479.0  1886.0
+4L-8L                   1575.0  1951.0
+8L-15L                  1663.0  1966.0
+15L-25L                 1588.0  2009.0
+25L+                    1586.0  2054.0
+
+### spend_by_region
+         median    mean
+region                 
+Central  1542.0  1972.0
+East     1625.0  2051.0
+North    1608.0  1976.0
+South    1503.0  1937.0
+West     1638.0  1930.0
+
+### pref_by_gender
+preferred_category  Bodycare  Bundles  Haircare  Skincare
+gender                                                   
+Female                 0.205    0.075     0.250     0.471
+Male                   0.192    0.079     0.254     0.476
+Non-disclosed          0.146    0.090     0.275     0.489
+
+### catalog_crosstab
+campaign_objective  Awareness  Conversion  Reactivation  Retention
+channel                                                           
+Display                     0           0             0          2
+Email                       0           1             0          2
+SMS                         0           1             0          2
+Search                      2           0             0          0
+Social                      0           0             1          1
+WhatsApp                    0           1             0          1
+
+### catalog_cat
+campaign_objective  Awareness  Conversion  Reactivation  Retention
+featured_category                                                 
+Bodycare                    1           0             0          1
+Bundles                     0           2             1          0
+Haircare                    1           1             0          2
+Skincare                    0           0             0          5
+
+### reach
+                    campaign_name   channel featured_category  discount_pct campaign_objective  exposures  customers      cost  buyers  conv_rate  cost_per_exposure
+campaign_id                                                                                                                                                         
+C001               New Year Reset     Email          Skincare            10          Retention       1475       1318    618.65      71      0.048              0.419
+C002           Winter Skin Rescue       SMS          Haircare            15          Retention       1552       1383   1454.64      67      0.043              0.937
+C003                    Glow Week    Social          Skincare            12          Retention       1466       1302  11580.14      82      0.056              7.899
+C004             Haircare Refresh    Search          Haircare            10          Awareness       1542       1366  20153.74      81      0.053             13.070
+C005         Valentines Self Care   Display          Bodycare            20          Retention       1518       1340   6073.76      84      0.055              4.001
+C006             Summer SPF Drive  WhatsApp          Skincare            15          Retention       1452       1285   1968.38      91      0.063              1.356
+C007           Weekend Flash Sale     Email           Bundles            25         Conversion       1499       1334    627.56      94      0.063              0.419
+C008                 Monsoon Care       SMS          Haircare            18          Retention       1513       1347   1427.41      89      0.059              0.943
+C009             VIP Early Access    Social           Bundles            12       Reactivation       1546       1368  12035.05      66      0.043              7.785
+C010               Wellness Month    Search          Bodycare            10          Awareness       1504       1338  19877.12      74      0.049             13.216
+C011              Festive Preview   Display          Skincare            15          Retention       1438       1277   5751.58      91      0.063              4.000
+C012               Bundle Savings  WhatsApp           Bundles            22         Conversion       1551       1374   2124.86      97      0.063              1.370
+C013                 Payday Picks     Email          Skincare            17          Retention       1433       1264    599.06     100      0.070              0.418
+C014           Reactivation Boost       SMS          Haircare            20         Conversion       1511       1337   1423.65      82      0.054              0.942
+
+### cost_by_channel
+           mean    50%   min    max
+channel                            
+Display    4.00   4.01  2.66   5.32
+Email      0.42   0.42  0.28   0.56
+SMS        0.94   0.94  0.63   1.26
+Search    13.14  13.24  8.76  17.50
+Social     7.84   7.81  5.25  10.50
+WhatsApp   1.36   1.37  0.91   1.82
+
+### funnel
+          delivered  opened  clicked  purchased_within_14_days     n  clicked_no_open
+channel                                                                              
+Email         0.926   0.450    0.299                     0.060  4407            0.062
+SMS           0.921   0.342    0.252                     0.052  4576            0.076
+Social        0.986   0.361    0.219                     0.049  3012            0.061
+Search        0.987   0.365    0.192                     0.051  3046            0.053
+Display       0.986   0.370    0.280                     0.059  2956            0.090
+WhatsApp      0.920   0.425    0.307                     0.063  3003            0.071
+
+### drivers
+                              mean   size
+recency_band      0-30      0.1025   5367
+                  31-90     0.0526   6330
+                  91-180    0.0399   4992
+                  181-365   0.0227   3576
+                  365+      0.0082    735
+orders_band       0         0.0224   2853
+                  1-2       0.0457  10237
+                  3-5       0.0735   7143
+                  6+        0.1460    767
+marketing_consent 0         0.0516   3957
+                  1         0.0566  17043
+cat_match         match     0.0806   5859
+                  no match  0.0460  15141
+
+### conv_overall
+0.05566666666666667
+
+### repeat_pairs
+2174
+
+### conv_by_sends
+         mean   size
+sends               
+1      0.0548  16459
+2      0.0598   3982
+3      0.0498    522
+4      0.0938     32
+5      0.0000      5
+
+### orders_month
+attributed  False  True 
+month                   
+2025-01-01    942      0
+2025-02-01    848      0
+2025-03-01    966      0
+2025-04-01    887      0
+2025-05-01    928      0
+2025-06-01    917      0
+2025-07-01    941      0
+2025-08-01    898      0
+2025-09-01    883      0
+2025-10-01    918      0
+2025-11-01    925      0
+2025-12-01    952      0
+2026-01-01    235     62
+2026-02-01    196    134
+2026-03-01    220    132
+2026-04-01    209    161
+2026-05-01    250    170
+2026-06-01    234    124
+2026-07-01    262    158
+2026-08-01    225    176
+2026-09-01    208     52
+2026-10-01     61      0
+
+### orders_desc
+       gross_merchandise_value_inr  discount_inr  shipping_fee_inr  order_total_inr
+count                      14274.0       14274.0           14274.0          14274.0
+mean                        1518.9          19.8              19.8           1518.9
+std                         1068.5          84.7              24.0           1042.8
+min                          249.0           0.0               0.0            235.8
+25%                          699.0           0.0               0.0            748.0
+50%                         1199.0           0.0               0.0           1199.0
+75%                         1998.0           0.0              49.0           1997.0
+max                         9693.0        1131.9              49.0           9693.0
+
+### payment
+               size    mean
+payment_mode               
+COD            3326  1551.5
+Prepaid       10948  1509.0
+
+### discounted_share
+0.08189715566764746
+
+### discount_by_attr
+             orders       aov  disc_share  disc_pct
+attributed                                         
+False       13105.0  1540.371         0.0     0.000
+True         1169.0  1278.211         1.0     0.161
+
+### shipping_rule
+                    min     max  size
+shipping_fee_inr                     
+0                 999.0  9693.0  8520
+49                249.0  1299.0  5754
+
+### orders_per_customer
+count    5383.00
+mean        2.65
+std         1.50
+min         1.00
+25%         1.00
+50%         2.00
+75%         4.00
+max        10.00
+dtype: float64
+
+### customers_with_orders
+5383
+
+### lag
+count    1169.00
+mean        7.35
+std         4.08
+min         1.00
+25%         4.00
+50%         7.00
+75%        11.00
+max        14.00
+dtype: float64
+
+### corr_2025_orders_vs_snapshot
+0.32336016447533467
+
+### zero_order_customers_with_2025_orders
+595
+
+### products
+   product_id           product_name  category  units    revenue  orders  rev_share
+8         P09      Hair Growth Serum  Haircare   1923  2305677.0    1475      0.106
+16        P17    Glow Essentials Kit   Bundles   1163  2092237.0     919      0.097
+5         P06     Night Repair Cream  Skincare   1647  1645353.0    1293      0.076
+3         P04        Vitamin C Serum  Skincare   1716  1542684.0    1349      0.071
+9         P10            Scalp Scrub  Haircare   1912  1336488.0    1470      0.062
+14        P15    Travel Skincare Kit   Bundles   1007  1308093.0     806      0.060
+4         P05      Niacinamide Serum  Skincare   1601  1279199.0    1264      0.059
+13        P14              Face Mask  Skincare   1650  1153350.0    1308      0.053
+15        P16           Haircare Duo   Bundles   1155  1096095.0     896      0.051
+1         P02  Hydrating Moisturiser  Skincare   1778  1065022.0    1398      0.049
+7         P08     Repair Conditioner  Haircare   1885  1034865.0    1451      0.048
+2         P03       SPF 50 Sunscreen  Skincare   1568  1017632.0    1225      0.047
+10        P11            Body Lotion  Bodycare   2239  1005311.0    1692      0.046
+6         P07         Gentle Shampoo  Haircare   1884   940116.0    1421      0.043
+11        P12              Body Wash  Bodycare   2235   891765.0    1694      0.041
+17        P18         Bodycare Combo   Bundles   1125   842625.0     893      0.039
+0         P01         Daily Cleanser  Skincare   1660   579340.0    1315      0.027
+12        P13               Lip Balm  Bodycare   2189   545061.0    1650      0.025
+
+### items
+          lines     units
+count  14274.00  14274.00
+mean       1.76      2.13
+std        0.86      1.21
+min        1.00      1.00
+25%        1.00      1.00
+50%        2.00      2.00
+75%        2.00      3.00
+max        4.00      9.00
+
+### qty
+quantity
+1    20608
+2     3705
+3      773
+Name: count, dtype: int64
+
+### cat_sales
+          units    revenue  rev_share
+category                             
+Bodycare   6663  2442137.0      0.113
+Bundles    4450  5339050.0      0.246
+Haircare   7604  5617146.0      0.259
+Skincare  11620  8282580.0      0.382
+
+### top_pairs
+                           a                        b      lift  orders_together
+210            P12 Body Wash             P13 Lip Balm  1.623961              318
+117       P07 Gentle Shampoo          P10 Scalp Scrub  1.489672              218
+191          P11 Body Lotion            P12 Body Wash  1.479069              297
+116       P07 Gentle Shampoo    P09 Hair Growth Serum  1.457382              214
+135   P08 Repair Conditioner          P10 Scalp Scrub  1.445489              216
+268  P15 Travel Skincare Kit  P17 Glow Essentials Kit  1.445295               75
+115       P07 Gentle Shampoo   P08 Repair Conditioner  1.439950              208
+192          P11 Body Lotion             P13 Lip Balm  1.416254              277
+269  P15 Travel Skincare Kit       P18 Bodycare Combo  1.348553               68
+153    P09 Hair Growth Serum          P10 Scalp Scrub  1.323221              201
+
+### bottom_pairs
+                             a                       b      lift  orders_together
+99      P06 Night Repair Cream         P10 Scalp Scrub  0.300393               40
+193            P11 Body Lotion           P14 Face Mask  0.303135               47
+79       P05 Niacinamide Serum  P08 Repair Conditioner  0.311309               40
+139     P08 Repair Conditioner           P14 Face Mask  0.315878               42
+96      P06 Night Repair Cream      P07 Gentle Shampoo  0.318520               41
+24   P02 Hydrating Moisturiser      P07 Gentle Shampoo  0.323338               45
+
+### multi_line_share
+0.5218579234972678
+
+### bundle_check
+    bundle_price                                         plausible_components components_sum
+P15         1299    Daily Cleanser + Hydrating Moisturiser + SPF 50 Sunscreen           1597
+P16          949                          Gentle Shampoo + Repair Conditioner           1048
+P17         1799  Vitamin C Serum + Niacinamide Serum + Hydrating Moisturiser           2297
+P18          749                                      Body Lotion + Body Wash            848
+
+### kpi
+                spend       revenue  impressions   clicks  conversions    ROAS      CPA    CTR    CVR  spend_share       AOV
+channel                                                                                                                     
+Email      3246847.40  1.062376e+08     63032217  2654913        80036  32.720   40.567  0.042  0.030        0.069  1327.373
+SMS        1712681.00  3.243582e+07     21654188   918528        24008  18.939   71.338  0.042  0.026        0.036  1351.042
+Social    14417805.11  4.803273e+07     39447249  1661548        35397   3.331  407.317  0.042  0.021        0.307  1356.972
+Search    16855990.37  7.703959e+07     29648598  1261291        56725   4.570  297.153  0.043  0.045        0.358  1358.124
+Display    8263040.22  2.342627e+07     37556105  1573060        17275   2.835  478.324  0.042  0.011        0.176  1356.079
+WhatsApp   2534048.49  5.653523e+07     25032497  1079906        42334  22.310   59.858  0.043  0.039        0.054  1335.457
+
+### yearly
+      ad_spend_inr  attributed_revenue_inr  conversions  weeks
+year                                                          
+2024    14300503.0             100043952.0        74593     53
+2025    16777951.0             122339520.0        90244     52
+2026    15951959.0             121323763.0        90938     43
+
+### yearly_wk1_43
+      ad_spend_inr  attributed_revenue_inr  conversions
+year                                                   
+2024    11802403.0              82700843.0        61699
+2025    13708066.0              99444942.0        73359
+2026    15541812.0             118395706.0        88677
+
+### peak_weeks
+week_start_date
+2026-05-25    5276539.05
+2026-08-10    3967780.71
+2026-06-22    3673531.09
+2026-06-08    3601535.59
+2026-04-13    3517973.94
+2026-06-29    3483744.64
+2026-07-27    3308780.86
+2026-05-18    3203116.93
+Name: attributed_revenue_inr, dtype: float64
+
+### elasticity_naive
+Email       0.933
+SMS         1.120
+Social      0.964
+Search      1.095
+Display     1.168
+WhatsApp    1.281
+dtype: float64
+
+### brand_means
+             quality  affordability  innovation  naturalness  trendiness
+brand                                                                   
+NexaGlow        4.07           3.97        3.87         3.92        3.69
+BlushBloom      3.47           4.48        4.21         2.99        4.11
+RadiantCo       3.39           4.34        4.38         3.10        3.84
+PureRoot        4.25           3.15        3.22         4.51        3.54
+UrbanLeaf       3.67           3.56        3.38         4.05        3.74
+DewDrop         3.15           4.13        3.49         3.28        4.04
+Aster & Oak     4.32           3.04        3.00         4.42        3.29
+ClariSkin       4.15           2.97        4.35         3.47        3.10
+
+### attr_corr
+               quality  affordability  innovation  naturalness  trendiness
+quality           1.00          -0.16        0.00         0.28       -0.06
+affordability    -0.16           1.00        0.22        -0.20        0.28
+innovation        0.00           0.22        1.00        -0.19        0.10
+naturalness       0.28          -0.20       -0.19         1.00       -0.03
+trendiness       -0.06           0.28        0.10        -0.03        1.00
+
+### resp_vs_base
+                  base  respondents
+age             32.264       32.554
+female_share     0.588        0.546
+spend         1964.282     1945.150
+orders           2.176        2.155
+consent          0.811        0.814
+
+### n_resp_customers
+760

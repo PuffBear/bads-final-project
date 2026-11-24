@@ -1,0 +1,20 @@
+,odds_ratio,ci_low,ci_high,p_value
+Intercept,0.2357,0.1524,0.3645,0.0
+C(region)[T.East],0.8405,0.713,0.9909,0.0385
+C(region)[T.North],0.9402,0.8158,1.0836,0.3946
+C(region)[T.South],0.9743,0.8418,1.1277,0.7273
+C(region)[T.West],1.0303,0.8919,1.1901,0.6851
+"C(annual_income_band_inr, Treatment('8L-15L'))[T.15L-25L]",0.967,0.8636,1.0828,0.5608
+"C(annual_income_band_inr, Treatment('8L-15L'))[T.25L+]",1.0233,0.8891,1.1777,0.7482
+"C(annual_income_band_inr, Treatment('8L-15L'))[T.4L-8L]",0.9425,0.8512,1.0437,0.2552
+"C(annual_income_band_inr, Treatment('8L-15L'))[T.Under 4L]",0.9876,0.8786,1.11,0.8336
+"C(segment, Treatment('Occasional buyers'))[T.Recent actives]",1.0263,0.9237,1.1402,0.6294
+"C(segment, Treatment('Occasional buyers'))[T.Lapsing regulars]",1.0497,0.9425,1.169,0.3776
+"C(segment, Treatment('Occasional buyers'))[T.Low-basket buyers]",1.0361,0.92,1.1668,0.5589
+"C(segment, Treatment('Occasional buyers'))[T.Registered, never purchased]",0.9794,0.8518,1.1261,0.7705
+C(gender)[T.Male],0.9948,0.9186,1.0773,0.8979
+C(gender)[T.Non-disclosed],1.0038,0.7927,1.2711,0.9747
+attributed[T.True],1.0373,0.8752,1.2294,0.6731
+C(year)[T.2026],0.9669,0.8659,1.0798,0.5504
+np.log(gross_merchandise_value_inr),1.0515,0.9951,1.1112,0.0742
+age,0.9983,0.9942,1.0025,0.4283

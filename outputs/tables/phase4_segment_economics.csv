@@ -1,0 +1,6 @@
+segment,exposures,conv_rate,cost_per_order,net_rev_per_exposure,contribution_per_exposure,breakeven_incrementality
+Recent actives,3503.0,0.1142,35.0181,137.4207,67.7755,0.3117
+Lapsing regulars,3552.0,0.0645,65.3879,82.1725,38.8163,0.3389
+Low-basket buyers,3560.0,0.0463,86.2442,62.1617,28.5417,0.3577
+Occasional buyers,7532.0,0.0413,98.2921,51.2579,22.773,0.3785
+"Registered, never purchased",2853.0,0.0224,186.4908,30.1131,11.5508,0.4645

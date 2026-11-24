@@ -1,0 +1,71 @@
+scale,attribute,competitor,mean_diff,ci_low,ci_high,p_value,share_rate_nexaglow_higher,share_rate_lower,p_holm,verdict
+raw,quality,Aster & Oak,-0.2537,-0.3242,-0.1833,0.0,0.215,0.395,0.0,NexaGlow behind
+raw,quality,BlushBloom,0.595,0.5192,0.6708,0.0,0.545,0.1512,0.0,NexaGlow ahead
+raw,quality,ClariSkin,-0.0863,-0.1585,-0.014,0.0193,0.2962,0.3525,0.0385,NexaGlow behind
+raw,quality,DewDrop,0.9125,0.8373,0.9877,0.0,0.6512,0.0862,0.0,NexaGlow ahead
+raw,quality,PureRoot,-0.1862,-0.2564,-0.1161,0.0,0.24,0.3762,0.0,NexaGlow behind
+raw,quality,RadiantCo,0.6788,0.6021,0.7554,0.0,0.5712,0.1225,0.0,NexaGlow ahead
+raw,quality,UrbanLeaf,0.3975,0.3246,0.4704,0.0,0.4488,0.1737,0.0,NexaGlow ahead
+raw,affordability,Aster & Oak,0.9325,0.8607,1.0043,0.0,0.6688,0.0738,0.0,NexaGlow ahead
+raw,affordability,BlushBloom,-0.5038,-0.5717,-0.4358,0.0,0.145,0.5125,0.0,NexaGlow behind
+raw,affordability,ClariSkin,1.005,0.934,1.076,0.0,0.7138,0.0625,0.0,NexaGlow ahead
+raw,affordability,DewDrop,-0.1562,-0.2277,-0.0848,0.0,0.2525,0.3638,0.0001,NexaGlow behind
+raw,affordability,PureRoot,0.82,0.7472,0.8928,0.0,0.63,0.0988,0.0,NexaGlow ahead
+raw,affordability,RadiantCo,-0.3725,-0.4379,-0.3071,0.0,0.1725,0.4412,0.0,NexaGlow behind
+raw,affordability,UrbanLeaf,0.4138,0.3407,0.4868,0.0,0.4788,0.195,0.0,NexaGlow ahead
+raw,innovation,Aster & Oak,0.865,0.7921,0.9379,0.0,0.6338,0.0888,0.0,NexaGlow ahead
+raw,innovation,BlushBloom,-0.3438,-0.4162,-0.2713,0.0,0.205,0.4438,0.0,NexaGlow behind
+raw,innovation,ClariSkin,-0.485,-0.5536,-0.4164,0.0,0.1488,0.5012,0.0,NexaGlow behind
+raw,innovation,DewDrop,0.3813,0.3046,0.4579,0.0,0.4525,0.2,0.0,NexaGlow ahead
+raw,innovation,PureRoot,0.6525,0.5801,0.7249,0.0,0.5638,0.135,0.0,NexaGlow ahead
+raw,innovation,RadiantCo,-0.5125,-0.5823,-0.4427,0.0,0.1412,0.515,0.0,NexaGlow behind
+raw,innovation,UrbanLeaf,0.4888,0.4186,0.5589,0.0,0.4825,0.1525,0.0,NexaGlow ahead
+raw,naturalness,Aster & Oak,-0.5,-0.5662,-0.4338,0.0,0.1438,0.505,0.0,NexaGlow behind
+raw,naturalness,BlushBloom,0.9312,0.86,1.0025,0.0,0.665,0.0762,0.0,NexaGlow ahead
+raw,naturalness,ClariSkin,0.4512,0.3737,0.5288,0.0,0.4675,0.1713,0.0,NexaGlow ahead
+raw,naturalness,DewDrop,0.6425,0.5672,0.7178,0.0,0.545,0.1288,0.0,NexaGlow ahead
+raw,naturalness,PureRoot,-0.5862,-0.6532,-0.5193,0.0,0.115,0.53,0.0,NexaGlow behind
+raw,naturalness,RadiantCo,0.8275,0.7525,0.9025,0.0,0.6275,0.1013,0.0,NexaGlow ahead
+raw,naturalness,UrbanLeaf,-0.1225,-0.1925,-0.0525,0.0006,0.2725,0.3625,0.0018,NexaGlow behind
+raw,trendiness,Aster & Oak,0.4025,0.3236,0.4814,0.0,0.4825,0.2075,0.0,NexaGlow ahead
+raw,trendiness,BlushBloom,-0.4175,-0.4909,-0.3441,0.0,0.1912,0.4812,0.0,NexaGlow behind
+raw,trendiness,ClariSkin,0.5913,0.5166,0.6659,0.0,0.5538,0.1512,0.0,NexaGlow ahead
+raw,trendiness,DewDrop,-0.35,-0.423,-0.277,0.0,0.21,0.4538,0.0,NexaGlow behind
+raw,trendiness,PureRoot,0.1525,0.0774,0.2276,0.0001,0.3812,0.2612,0.0003,NexaGlow ahead
+raw,trendiness,RadiantCo,-0.1475,-0.2259,-0.0691,0.0002,0.2912,0.3825,0.0009,NexaGlow behind
+raw,trendiness,UrbanLeaf,-0.0475,-0.1198,0.0248,0.1979,0.2838,0.3175,0.1979,no difference
+centred,quality,Aster & Oak,-0.2537,-0.3242,-0.1833,0.0,0.215,0.395,0.0,NexaGlow behind
+centred,quality,BlushBloom,0.595,0.5192,0.6708,0.0,0.545,0.1512,0.0,NexaGlow ahead
+centred,quality,ClariSkin,-0.0863,-0.1585,-0.014,0.0193,0.2962,0.3525,0.0385,NexaGlow behind
+centred,quality,DewDrop,0.9125,0.8373,0.9877,0.0,0.6512,0.0862,0.0,NexaGlow ahead
+centred,quality,PureRoot,-0.1862,-0.2564,-0.1161,0.0,0.24,0.3762,0.0,NexaGlow behind
+centred,quality,RadiantCo,0.6788,0.6021,0.7554,0.0,0.5712,0.1225,0.0,NexaGlow ahead
+centred,quality,UrbanLeaf,0.3975,0.3246,0.4704,0.0,0.4488,0.1737,0.0,NexaGlow ahead
+centred,affordability,Aster & Oak,0.9325,0.8607,1.0043,0.0,0.6688,0.0738,0.0,NexaGlow ahead
+centred,affordability,BlushBloom,-0.5038,-0.5717,-0.4358,0.0,0.145,0.5125,0.0,NexaGlow behind
+centred,affordability,ClariSkin,1.005,0.934,1.076,0.0,0.7138,0.0625,0.0,NexaGlow ahead
+centred,affordability,DewDrop,-0.1562,-0.2277,-0.0848,0.0,0.2525,0.3638,0.0001,NexaGlow behind
+centred,affordability,PureRoot,0.82,0.7472,0.8928,0.0,0.63,0.0988,0.0,NexaGlow ahead
+centred,affordability,RadiantCo,-0.3725,-0.4379,-0.3071,0.0,0.1725,0.4412,0.0,NexaGlow behind
+centred,affordability,UrbanLeaf,0.4138,0.3407,0.4868,0.0,0.4788,0.195,0.0,NexaGlow ahead
+centred,innovation,Aster & Oak,0.865,0.7921,0.9379,0.0,0.6338,0.0888,0.0,NexaGlow ahead
+centred,innovation,BlushBloom,-0.3438,-0.4162,-0.2713,0.0,0.205,0.4438,0.0,NexaGlow behind
+centred,innovation,ClariSkin,-0.485,-0.5536,-0.4164,0.0,0.1488,0.5012,0.0,NexaGlow behind
+centred,innovation,DewDrop,0.3813,0.3046,0.4579,0.0,0.4525,0.2,0.0,NexaGlow ahead
+centred,innovation,PureRoot,0.6525,0.5801,0.7249,0.0,0.5638,0.135,0.0,NexaGlow ahead
+centred,innovation,RadiantCo,-0.5125,-0.5823,-0.4427,0.0,0.1412,0.515,0.0,NexaGlow behind
+centred,innovation,UrbanLeaf,0.4888,0.4186,0.5589,0.0,0.4825,0.1525,0.0,NexaGlow ahead
+centred,naturalness,Aster & Oak,-0.5,-0.5662,-0.4338,0.0,0.1438,0.505,0.0,NexaGlow behind
+centred,naturalness,BlushBloom,0.9312,0.86,1.0025,0.0,0.665,0.0762,0.0,NexaGlow ahead
+centred,naturalness,ClariSkin,0.4512,0.3737,0.5288,0.0,0.4675,0.1713,0.0,NexaGlow ahead
+centred,naturalness,DewDrop,0.6425,0.5672,0.7178,0.0,0.545,0.1288,0.0,NexaGlow ahead
+centred,naturalness,PureRoot,-0.5862,-0.6532,-0.5193,0.0,0.115,0.53,0.0,NexaGlow behind
+centred,naturalness,RadiantCo,0.8275,0.7525,0.9025,0.0,0.6275,0.1013,0.0,NexaGlow ahead
+centred,naturalness,UrbanLeaf,-0.1225,-0.1925,-0.0525,0.0006,0.2725,0.3625,0.0018,NexaGlow behind
+centred,trendiness,Aster & Oak,0.4025,0.3236,0.4814,0.0,0.4825,0.2075,0.0,NexaGlow ahead
+centred,trendiness,BlushBloom,-0.4175,-0.4909,-0.3441,0.0,0.1912,0.4812,0.0,NexaGlow behind
+centred,trendiness,ClariSkin,0.5913,0.5166,0.6659,0.0,0.5538,0.1512,0.0,NexaGlow ahead
+centred,trendiness,DewDrop,-0.35,-0.423,-0.277,0.0,0.21,0.4538,0.0,NexaGlow behind
+centred,trendiness,PureRoot,0.1525,0.0774,0.2276,0.0001,0.3812,0.2612,0.0003,NexaGlow ahead
+centred,trendiness,RadiantCo,-0.1475,-0.2259,-0.0691,0.0002,0.2912,0.3825,0.0009,NexaGlow behind
+centred,trendiness,UrbanLeaf,-0.0475,-0.1198,0.0248,0.1979,0.2838,0.3175,0.1979,no difference

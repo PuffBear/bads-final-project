@@ -1,0 +1,19 @@
+product_id,product_name,category,list_price_inr
+P01,Daily Cleanser,Skincare,349
+P02,Hydrating Moisturiser,Skincare,599
+P03,SPF 50 Sunscreen,Skincare,649
+P04,Vitamin C Serum,Skincare,899
+P05,Niacinamide Serum,Skincare,799
+P06,Night Repair Cream,Skincare,999
+P07,Gentle Shampoo,Haircare,499
+P08,Repair Conditioner,Haircare,549
+P09,Hair Growth Serum,Haircare,1199
+P10,Scalp Scrub,Haircare,699
+P11,Body Lotion,Bodycare,449
+P12,Body Wash,Bodycare,399
+P13,Lip Balm,Bodycare,249
+P14,Face Mask,Skincare,699
+P15,Travel Skincare Kit,Bundles,1299
+P16,Haircare Duo,Bundles,949
+P17,Glow Essentials Kit,Bundles,1799
+P18,Bodycare Combo,Bundles,749

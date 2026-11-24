@@ -1,0 +1,9 @@
+variable,test,stat,dof,p_value,effect
+gender,chi-square,10.066400916492423,8,0.2603963484795092,Cramer's V 0.029
+region,chi-square,22.31160510750623,16,0.13341219490989678,Cramer's V 0.030
+city,chi-square,74.42923698115692,76,0.5295318407206212,Cramer's V 0.056
+annual_income_band_inr,chi-square,11.954177910639043,16,0.7471280154967942,Cramer's V 0.022
+preferred_category,chi-square,8.573448425337865,12,0.7388668612090585,Cramer's V 0.022
+age,Kruskal-Wallis,2.1992583715971894,4,0.6991650547095418,
+marketing_consent,chi-square,2.1803079102386573,4,0.702636051352921,Cramer's V 0.019
+2026 purchase (exposure level),chi-square,328.8907910223375,4,6.32305326028022e-70,Cramer's V 0.125

@@ -1,0 +1,8 @@
+,age,orders_before_2026,spend_before_2026_inr,days_since_last_order_at_2025_12_31,website_visits_dec_2025,email_engagement_dec_2025,marketing_consent
+age,1.0,0.006,0.002,-0.006,0.005,0.015,-0.041
+orders_before_2026,0.006,1.0,0.926,-0.393,0.346,0.448,0.012
+spend_before_2026_inr,0.002,0.926,1.0,-0.365,0.348,0.449,0.013
+days_since_last_order_at_2025_12_31,-0.006,-0.393,-0.365,1.0,-0.129,-0.176,0.006
+website_visits_dec_2025,0.005,0.346,0.348,-0.129,1.0,0.342,0.011
+email_engagement_dec_2025,0.015,0.448,0.449,-0.176,0.342,1.0,-0.003
+marketing_consent,-0.041,0.012,0.013,0.006,0.011,-0.003,1.0

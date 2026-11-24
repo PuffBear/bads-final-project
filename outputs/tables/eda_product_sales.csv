@@ -1,0 +1,19 @@
+product_id,product_name,category,units,revenue,orders,rev_share
+P09,Hair Growth Serum,Haircare,1923,2305677.0,1475,0.1063
+P17,Glow Essentials Kit,Bundles,1163,2092237.0,919,0.0965
+P06,Night Repair Cream,Skincare,1647,1645353.0,1293,0.0759
+P04,Vitamin C Serum,Skincare,1716,1542684.0,1349,0.0712
+P10,Scalp Scrub,Haircare,1912,1336488.0,1470,0.0616
+P15,Travel Skincare Kit,Bundles,1007,1308093.0,806,0.0603
+P05,Niacinamide Serum,Skincare,1601,1279199.0,1264,0.059
+P14,Face Mask,Skincare,1650,1153350.0,1308,0.0532
+P16,Haircare Duo,Bundles,1155,1096095.0,896,0.0506
+P02,Hydrating Moisturiser,Skincare,1778,1065022.0,1398,0.0491
+P08,Repair Conditioner,Haircare,1885,1034865.0,1451,0.0477
+P03,SPF 50 Sunscreen,Skincare,1568,1017632.0,1225,0.0469
+P11,Body Lotion,Bodycare,2239,1005311.0,1692,0.0464
+P07,Gentle Shampoo,Haircare,1884,940116.0,1421,0.0434
+P12,Body Wash,Bodycare,2235,891765.0,1694,0.0411
+P18,Bodycare Combo,Bundles,1125,842625.0,893,0.0389
+P01,Daily Cleanser,Skincare,1660,579340.0,1315,0.0267
+P13,Lip Balm,Bodycare,2189,545061.0,1650,0.0251

@@ -1,0 +1,25 @@
+target,origin,model,MAPE,RMSE,bias_pct,total_error_pct
+attributed_revenue_inr,2025-12-29,Seasonal naive x growth,15.323,685323.87,0.225,0.225
+attributed_revenue_inr,2025-12-29,"Holt-Winters (damped, mult.)",21.037,737126.465,13.274,13.274
+attributed_revenue_inr,2025-12-29,Harmonic regression + AR(1),13.307,557464.68,0.633,0.633
+attributed_revenue_inr,2025-12-29,Harmonic regression + AR(1) + actual spend,11.118,462529.601,0.346,0.346
+attributed_revenue_inr,2026-03-02,Seasonal naive x growth,14.231,715888.467,-4.49,-4.49
+attributed_revenue_inr,2026-03-02,"Holt-Winters (damped, mult.)",14.134,688082.85,-7.37,-7.37
+attributed_revenue_inr,2026-03-02,Harmonic regression + AR(1),13.455,594590.011,-1.813,-1.813
+attributed_revenue_inr,2026-03-02,Harmonic regression + AR(1) + actual spend,11.543,524316.037,-1.98,-1.98
+attributed_revenue_inr,2026-05-04,Seasonal naive x growth,12.909,684931.179,-3.727,-3.727
+attributed_revenue_inr,2026-05-04,"Holt-Winters (damped, mult.)",11.74,639151.41,-6.768,-6.768
+attributed_revenue_inr,2026-05-04,Harmonic regression + AR(1),11.819,565579.712,-2.023,-2.023
+attributed_revenue_inr,2026-05-04,Harmonic regression + AR(1) + actual spend,9.965,503855.291,-3.489,-3.489
+conversions,2025-12-29,Seasonal naive x growth,13.627,465.741,-0.977,-0.977
+conversions,2025-12-29,"Holt-Winters (damped, mult.)",18.511,480.004,11.483,11.483
+conversions,2025-12-29,Harmonic regression + AR(1),11.044,384.32,-0.88,-0.88
+conversions,2025-12-29,Harmonic regression + AR(1) + actual spend,8.34,309.538,-1.248,-1.248
+conversions,2026-03-02,Seasonal naive x growth,12.037,469.587,-6.453,-6.453
+conversions,2026-03-02,"Holt-Winters (damped, mult.)",11.712,453.241,-8.312,-8.312
+conversions,2026-03-02,Harmonic regression + AR(1),11.153,398.693,-3.643,-3.643
+conversions,2026-03-02,Harmonic regression + AR(1) + actual spend,9.999,339.077,-3.938,-3.938
+conversions,2026-05-04,Seasonal naive x growth,11.554,462.603,-6.297,-6.297
+conversions,2026-05-04,"Holt-Winters (damped, mult.)",11.273,448.178,-10.317,-10.317
+conversions,2026-05-04,Harmonic regression + AR(1),9.347,382.617,-4.956,-4.956
+conversions,2026-05-04,Harmonic regression + AR(1) + actual spend,9.349,337.743,-6.509,-6.509

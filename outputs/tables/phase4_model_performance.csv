@@ -1,0 +1,8 @@
+model,auc_test,auc_ci_low,auc_ci_high,avg_precision,brier,cv_auc_grouped_5fold,cv_auc_sd,mean_pred_prob,actual_rate,top30_buyer_capture
+Logistic regression,0.6798,0.65,0.7065,0.1286,0.0569,0.6845,0.014,0.0557,0.0624,0.5405
+Gradient boosting,0.6729,0.6421,0.6998,0.1274,0.057,0.6717,0.0147,0.0544,0.0624,0.5189
+Gaussian Naive Bayes,0.6725,0.6433,0.7007,0.1227,0.0874,0.6716,0.0118,0.152,0.0624,0.5378
+"Gaussian NB, redundant features removed",0.6735,0.6447,0.702,0.1228,0.067,0.6736,0.0116,0.0835,0.0624,0.5324
+"Naive Bayes (categorical, binned)",0.6588,0.631,0.6859,0.1141,0.0622,0.6573,0.0196,0.0853,0.0624,0.5297
+RFM score only,0.6666,0.635,0.6936,0.1216,,,,,0.0624,0.5351
+LEAKY: + delivered/opened/clicked (not usable),0.7298,,,0.16,,,,,0.0624,0.6054

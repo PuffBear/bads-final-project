@@ -1,0 +1,7 @@
+check,value
+share of 'Recent actives' at the recency = 2 heap,0.76
+"ARI: refit excluding recency=2 heap, heap assigned to nearest centroid",0.381
+ARI: log spend instead of log AOV,0.318
+ARI: RFM-only features (drop engagement),0.588
+"ARI: Gaussian mixture (full covariance), same k",0.628
+GMM BIC-optimal k (2-9),9.0

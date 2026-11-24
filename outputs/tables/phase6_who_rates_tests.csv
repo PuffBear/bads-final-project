@@ -1,0 +1,13 @@
+outcome,variable,F_p_value,r2
+nx_overall,segment,0.9352,0.001
+gap_overall,segment,0.8596,0.0016
+nx_overall,gender,0.5247,0.0015
+gap_overall,gender,0.178,0.005
+nx_overall,region,0.6385,0.0034
+gap_overall,region,0.151,0.0086
+nx_overall,annual_income_band_inr,0.3538,0.0055
+gap_overall,annual_income_band_inr,0.3711,0.0055
+nx_overall,preferred_category,0.1356,0.0067
+gap_overall,preferred_category,0.41,0.0039
+nx_overall,age + spend + recency + email engagement,0.9497,0.001
+gap_overall,age + spend + recency + email engagement,0.6036,0.0034

@@ -1,0 +1,13 @@
+model,term,odds_ratio,ci_low,ci_high,p_value
+NexaGlow overall rating,nx_overall,0.921,0.6385,1.3283,0.6596
+"gap vs competitors, overall",gap_overall,0.9902,0.6422,1.5267,0.9645
+NexaGlow attribute ratings,quality,1.0784,0.8706,1.3359,0.4893
+NexaGlow attribute ratings,affordability,1.0872,0.8875,1.3319,0.4193
+NexaGlow attribute ratings,innovation,1.0085,0.8053,1.2631,0.941
+NexaGlow attribute ratings,naturalness,0.907,0.7244,1.1358,0.3952
+NexaGlow attribute ratings,trendiness,0.8697,0.6994,1.0815,0.2095
+"gap vs competitors, per attribute",gap_quality,1.1556,0.9372,1.425,0.1761
+"gap vs competitors, per attribute",gap_affordability,1.1327,0.9152,1.4019,0.2521
+"gap vs competitors, per attribute",gap_innovation,1.0308,0.83,1.2801,0.7838
+"gap vs competitors, per attribute",gap_naturalness,0.9079,0.7405,1.1131,0.3528
+"gap vs competitors, per attribute",gap_trendiness,0.8428,0.694,1.0236,0.0845
