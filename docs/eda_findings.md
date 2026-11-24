@@ -37,7 +37,7 @@ Customer snapshot at 31 Dec 2025 (signups Jan 2024 – Dec 2025). Orders run Jan
 - **Attribution lag**: 1–14 days, median 7, roughly uniform.
 
 ## order_items.csv (25,086 × 6)
-- **Basket shape** (`eda_12`): 1.76 distinct products and 2.13 units per order; 52% of orders have 2+ products. Quantity per line is 1–3 (82% are 1).
+- **Basket shape** (`eda_12`): 1.65 distinct products (1.76 lines) and 2.13 units per order; 48% of orders have 2+ distinct products (52% are single-product). Quantity per line is 1–3 (82% are 1).
 - **Category revenue**: Skincare 38%, Haircare 26%, Bundles 25%, Bodycare 11%. The top products are Hair Growth Serum (10.6%), Glow Essentials Kit (9.7%) and Night Repair Cream (7.6%); the bottom are Lip Balm and Daily Cleanser (2.5–2.7%).
 - **Co-occurrence** (`eda_13`, seeds Phase 3): strong **within-category** affinity, with pair lift around 1.4–1.6. Examples: Body Wash + Lip Balm 1.62; Shampoo + Scalp Scrub 1.49; Body Lotion + Body Wash 1.48; Shampoo + Hair Growth Serum 1.46. Cross-category pairs sit around 0.3 (Night Cream + Scalp Scrub 0.30), so customers rarely mix categories in one basket.
 
